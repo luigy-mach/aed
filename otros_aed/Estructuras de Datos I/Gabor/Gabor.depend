@@ -1,0 +1,121 @@
+# depslib dependency file v1.0
+1323010912 source:/home/josemiki/Escritorio/Estructuras de Datos I/GABOR CODE BLOCKS/Gabor/gradicador.cpp
+	"gradicador.h"
+
+1322077414 /home/josemiki/Escritorio/Estructuras de Datos I/GABOR CODE BLOCKS/Gabor/gradicador.h
+	"grafo.h"
+	<vector>
+
+1322935544 /home/josemiki/Escritorio/Estructuras de Datos I/GABOR CODE BLOCKS/Gabor/grafo.h
+	<stdio.h>
+	<iostream>
+	<string>
+	<fstream>
+	<vector>
+	"image.h"
+
+1323011722 /home/josemiki/Escritorio/Estructuras de Datos I/GABOR CODE BLOCKS/Gabor/image.h
+	<iostream>
+	<vector>
+	<string>
+	<fstream>
+	<sstream>
+	<stdio.h>
+	<stdlib.h>
+	<queue>
+
+1322968103 source:/home/josemiki/Escritorio/Estructuras de Datos I/GABOR CODE BLOCKS/Gabor/grafo.cpp
+	"grafo.h"
+
+1323049375 source:/home/josemiki/Escritorio/Estructuras de Datos I/GABOR CODE BLOCKS/Gabor/image.cpp
+	"image.h"
+	<cstdio>
+	"ImageGray.h"
+	"xtprobeImageDiskXFile.h"
+	<iostream>
+	<pthread.h>
+	<sstream>
+	<vector>
+	"ImageGray.h"
+	"xtprobeImageDiskXFile.h"
+
+1323049357 source:/home/josemiki/Escritorio/Estructuras de Datos I/GABOR CODE BLOCKS/Gabor/main.cpp
+	<vector>
+	<string>
+	<sstream>
+	<pthread.h>
+	<sstream>
+	<vector>
+	"ImageGray.h"
+	"xtprobeImageDiskXFile.h"
+	<iostream>
+	<fstream>
+	<pthread.h>
+	<sstream>
+	<vector>
+	"ImageGray.h"
+	"xtprobeImageDiskXFile.h"
+
+1175531657 /home/josemiki/Library/Torch3vision2.1/vision2.1/core/ImageGray.h
+	"Image.h"
+
+1175531657 /home/josemiki/Library/Torch3vision2.1/vision2.1/core/Image.h
+	"Sequence.h"
+	"vision.h"
+	"Color.h"
+
+1175531626 /home/josemiki/Library/Torch3vision2.1/core/Sequence.h
+	"Object.h"
+	"List.h"
+
+1175531626 /home/josemiki/Library/Torch3vision2.1/core/Object.h
+	"general.h"
+	"Allocator.h"
+
+1175531626 /home/josemiki/Library/Torch3vision2.1/core/general.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<limits.h>
+	<stdarg.h>
+	<time.h>
+	<float.h>
+	<values.h>
+
+1175531626 /home/josemiki/Library/Torch3vision2.1/core/Allocator.h
+	"general.h"
+
+1175531626 /home/josemiki/Library/Torch3vision2.1/core/List.h
+	"Object.h"
+
+1175531657 /home/josemiki/Library/Torch3vision2.1/vision2.1/core/vision.h
+	"Object.h"
+	"Sequence.h"
+
+1175531657 /home/josemiki/Library/Torch3vision2.1/vision2.1/core/Color.h
+	"Convert.h"
+
+1175531657 /home/josemiki/Library/Torch3vision2.1/vision2.1/core/Convert.h
+	"general.h"
+
+1175531657 /home/josemiki/Library/Torch3vision2.1/vision2.1/core/xtprobeImageDiskXFile.h
+	"ImageDiskXFile.h"
+
+1175531657 /home/josemiki/Library/Torch3vision2.1/vision2.1/core/ImageDiskXFile.h
+	"DiskXFile.h"
+
+1175531626 /home/josemiki/Library/Torch3vision2.1/core/DiskXFile.h
+	"XFile.h"
+
+1175531626 /home/josemiki/Library/Torch3vision2.1/core/XFile.h
+	"Object.h"
+
+1322935884 source:/home/josemiki/Escritorio/Estructuras de Datos I/GABOR CODE BLOCKS/Gabor/mainqt.cpp
+	<iostream>
+	<fstream>
+	"image.h"
+	"gradicador.h"
+	<string>
+	<stdlib.h>
+

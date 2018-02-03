@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Crawler - Similarity Web Search Engine: Referencia de la Clase SWSE::URLDownloader</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Crawler - Similarity Web Search Engine
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Buscadorwebporsimilaridaddetextosentrepáginas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;datos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceSWSE.html">SWSE</a></li><li class="navelem"><a class="el" href="classSWSE_1_1URLDownloader.html">URLDownloader</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="#pri-static-attribs">Atributos privados estáticos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase SWSE::URLDownloader</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase <a class="el" href="classSWSE_1_1URLDownloader.html" title="Clase URLDownloader, Ejecuta la descarga de la URL.">URLDownloader</a>, Ejecuta la descarga de la <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a>.  
+ <a href="classSWSE_1_1URLDownloader.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="urldownloader_8h_source.html">urldownloader.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboración para SWSE::URLDownloader:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1URLDownloader__coll__graph.png" border="0" usemap="#SWSE_1_1URLDownloader_coll__map" alt="Collaboration graph"/></div>
+<map name="SWSE_1_1URLDownloader_coll__map" id="SWSE_1_1URLDownloader_coll__map">
+<area shape="rect" id="node2" href="classSWSE_1_1Crawler.html" title="{SWSE::Crawler\n|+ conneciones\l&#45; urlQueue\l&#45; poolThread\l&#45; ON\l&#45; TamCola\l&#45; NumThreads\l|+ Crawler()\l+ queueURL()\l+ run()\l+ turnOff()\l+ PopURL()\l+ isON()\l+ saveQueue()\l+ loadQueue()\l+ getRegister()\l}" alt="" coords="440,349,555,659"/><area shape="rect" id="node6" href="classSWSE_1_1Parser.html" title="{SWSE::Parser\n|&#45; reg_word_tag\l&#45; reg_word_script\l&#45; reg_word_style\l&#45; reg_word\l|+ Parser()\l+ to_plain_text()\l+ get_links()\l+ setURLResolverClient()\l+ saveData()\l+ run()\l+ ~Parser()\l+ genFileName()\l}" alt="" coords="232,813,405,1072"/><area shape="rect" id="node4" href="classSWSE_1_1URLregister.html" title="{SWSE::URLregister\n|&#45; m_data\l|+ URLregister()\l+ insert()\l+ getURLpointTo()\l+ HashURL()\l+ saveData()\l+ loadData()\l+ ~URLregister()\l}" alt="" coords="428,5,567,195"/><area shape="rect" id="node9" href="classSWSE_1_1CrawledDataProcessor.html" title="Clase CrawledDataProcessor que procesa la data de la." alt="" coords="211,427,416,581"/><area shape="rect" id="node11" href="classSWSE_1_1URLResolverClient.html" title="{SWSE::URLResolverClient\n|&#45; socket_\l&#45; resolver_\l|+ URLResolverClient()\l+ connect()\l+ hash()\l+ hash()\l+ resolve()\l+ setDate()\l+ close()\l&#45; Request()\l}" alt="" coords="5,392,187,616"/><area shape="rect" id="node13" href="classSWSE_1_1URL.html" title="Clase URL." alt="" coords="621,262,776,746"/><area shape="rect" id="node16" href="classSWSE_1_1httpRequest.html" title="{SWSE::httpRequest\n|&#45; method\l&#45; attributes\l|+ httpRequest()\l+ httpRequest()\l+ setURL()\l+ WriteSocket()\l+ AddHeader()\l+ init()\l+ getURL()\l}" alt="" coords="552,839,693,1046"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a043f9953fa04072440b499012dc7532f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#a043f9953fa04072440b499012dc7532f">URLDownloader</a> ()</td></tr>
+<tr class="memdesc:a043f9953fa04072440b499012dc7532f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor por default.  <a href="#a043f9953fa04072440b499012dc7532f"></a><br/></td></tr>
+<tr class="memitem:a22b72a75b813c093e681a67d8716ef49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#a22b72a75b813c093e681a67d8716ef49">URLDownloader</a> (<a class="el" href="classSWSE_1_1Crawler.html">Crawler</a> *cr=0)</td></tr>
+<tr class="memdesc:a22b72a75b813c093e681a67d8716ef49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor a partir de un obejo <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a>.  <a href="#a22b72a75b813c093e681a67d8716ef49"></a><br/></td></tr>
+<tr class="memitem:a4e730642e0244257b47303543ad360c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#a4e730642e0244257b47303543ad360c6">URLDownloader</a> (<a class="el" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f">URLstr_t</a> url, <a class="el" href="classSWSE_1_1Crawler.html">Crawler</a> *cr=0)</td></tr>
+<tr class="memdesc:a4e730642e0244257b47303543ad360c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor a apatir del string de una <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a>.  <a href="#a4e730642e0244257b47303543ad360c6"></a><br/></td></tr>
+<tr class="memitem:ad712f367c375a790beb27350a80a7d4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#ad712f367c375a790beb27350a80a7d4a">queueURLlist</a> ()</td></tr>
+<tr class="memdesc:ad712f367c375a790beb27350a80a7d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pone a la cola de el crawler los <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> encontrados en la página descargada.  <a href="#ad712f367c375a790beb27350a80a7d4a"></a><br/></td></tr>
+<tr class="memitem:a993f4f44df994603ad9921e74c8d9390"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390">operator()</a> ()</td></tr>
+<tr class="memdesc:a993f4f44df994603ad9921e74c8d9390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia la ejcución de las descargas.  <a href="#a993f4f44df994603ad9921e74c8d9390"></a><br/></td></tr>
+<tr class="memitem:a8fd02ead706ebaa5f4801af35dd78305"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#a8fd02ead706ebaa5f4801af35dd78305">~URLDownloader</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a6bc8dcbf042ba292ddd1ceb1c95bf83d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1URL.html">URL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#a6bc8dcbf042ba292ddd1ceb1c95bf83d">m_url</a></td></tr>
+<tr class="memdesc:a6bc8dcbf042ba292ddd1ceb1c95bf83d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> a ser descargada.  <a href="#a6bc8dcbf042ba292ddd1ceb1c95bf83d"></a><br/></td></tr>
+<tr class="memitem:ac44f8cce0640b227e8d0089150ae50a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1httpRequest.html">httpRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#ac44f8cce0640b227e8d0089150ae50a5">m_request</a></td></tr>
+<tr class="memdesc:ac44f8cce0640b227e8d0089150ae50a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request enviado al servidor.  <a href="#ac44f8cce0640b227e8d0089150ae50a5"></a><br/></td></tr>
+<tr class="memitem:aaabda5860c2f785038e62d66064fcb5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#aaabda5860c2f785038e62d66064fcb5f">m_data</a></td></tr>
+<tr class="memdesc:aaabda5860c2f785038e62d66064fcb5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datos recibidos.  <a href="#aaabda5860c2f785038e62d66064fcb5f"></a><br/></td></tr>
+<tr class="memitem:a6f04a0495cba7e6be669dc468ab188fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1Crawler.html">Crawler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#a6f04a0495cba7e6be669dc468ab188fe">ptr_crawler</a></td></tr>
+<tr class="memdesc:a6f04a0495cba7e6be669dc468ab188fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puntero al crawler para acceder a la cola.  <a href="#a6f04a0495cba7e6be669dc468ab188fe"></a><br/></td></tr>
+<tr class="memitem:aeefda81bf8c1ba656041fd6f15c7c99e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSWSE.html#a0075c5fb5a359bfccf6eb0c5c324d7bc">ID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#aeefda81bf8c1ba656041fd6f15c7c99e">m_id</a></td></tr>
+<tr class="memdesc:aeefda81bf8c1ba656041fd6f15c7c99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto parser que obtiene las url de el documento y obtiene las palabras para ser indexadas.  <a href="#aeefda81bf8c1ba656041fd6f15c7c99e"></a><br/></td></tr>
+<tr class="memitem:ad5ba810e901720495bd565d35bb0ca43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1Parser.html">Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#ad5ba810e901720495bd565d35bb0ca43">parser</a></td></tr>
+<tr class="memitem:aef583d25861ea7645fec05412cce55a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1URLResolverClient.html">URLResolverClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#aef583d25861ea7645fec05412cce55a0">rc</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-static-attribs"></a>
+Atributos privados estáticos</h2></td></tr>
+<tr class="memitem:aa101774e6e494799fd9a8503e0d6fde7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceSWSE.html#a0075c5fb5a359bfccf6eb0c5c324d7bc">ID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1URLDownloader.html#aa101774e6e494799fd9a8503e0d6fde7">threadid</a> = 0</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase <a class="el" href="classSWSE_1_1URLDownloader.html" title="Clase URLDownloader, Ejecuta la descarga de la URL.">URLDownloader</a>, Ejecuta la descarga de la <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a>. </p>
+<p>*Maneja el cliente http a ser usado, y parsea los datos recibidos. </p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a043f9953fa04072440b499012dc7532f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SWSE::URLDownloader::URLDownloader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor por default. </p>
+
+</div>
+</div>
+<a class="anchor" id="a22b72a75b813c093e681a67d8716ef49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SWSE::URLDownloader::URLDownloader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1Crawler.html">Crawler</a> *&#160;</td>
+          <td class="paramname"><em>cr</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor a partir de un obejo <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td><a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> a ser descargada. </td></tr>
+    <tr><td class="paramname">cr</td><td>puntero al crawler creador. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4e730642e0244257b47303543ad360c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SWSE::URLDownloader::URLDownloader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f">URLstr_t</a>&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1Crawler.html">Crawler</a> *&#160;</td>
+          <td class="paramname"><em>cr</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor a apatir del string de una <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>String del <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> a ser descargado. </td></tr>
+    <tr><td class="paramname">cr</td><td>puntero al crawler creador. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8fd02ead706ebaa5f4801af35dd78305"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SWSE::URLDownloader::~URLDownloader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a993f4f44df994603ad9921e74c8d9390"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::URLDownloader::operator() </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia la ejcución de las descargas. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad712f367c375a790beb27350a80a7d4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::URLDownloader::queueURLlist </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pone a la cola de el crawler los <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> encontrados en la página descargada. </p>
+
+</div>
+</div>
+<h2>Documentación de los campos</h2>
+<a class="anchor" id="aaabda5860c2f785038e62d66064fcb5f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a> SWSE::URLDownloader::m_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Datos recibidos. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeefda81bf8c1ba656041fd6f15c7c99e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceSWSE.html#a0075c5fb5a359bfccf6eb0c5c324d7bc">ID</a> SWSE::URLDownloader::m_id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Objeto parser que obtiene las url de el documento y obtiene las palabras para ser indexadas. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac44f8cce0640b227e8d0089150ae50a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1httpRequest.html">httpRequest</a> SWSE::URLDownloader::m_request</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Request enviado al servidor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6bc8dcbf042ba292ddd1ceb1c95bf83d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1URL.html">URL</a> SWSE::URLDownloader::m_url</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> a ser descargada. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad5ba810e901720495bd565d35bb0ca43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1Parser.html">Parser</a> SWSE::URLDownloader::parser</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6f04a0495cba7e6be669dc468ab188fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1Crawler.html">Crawler</a>* SWSE::URLDownloader::ptr_crawler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Puntero al crawler para acceder a la cola. </p>
+
+</div>
+</div>
+<a class="anchor" id="aef583d25861ea7645fec05412cce55a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1URLResolverClient.html">URLResolverClient</a>* SWSE::URLDownloader::rc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa101774e6e494799fd9a8503e0d6fde7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceSWSE.html#a0075c5fb5a359bfccf6eb0c5c324d7bc">ID</a> SWSE::URLDownloader::threadid = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li><a class="el" href="urldownloader_8h_source.html">urldownloader.h</a></li>
+<li><a class="el" href="urldownloader_8cpp.html">urldownloader.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 17 de Diciembre de 2012 13:37:43 para Crawler - Similarity Web Search Engine por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

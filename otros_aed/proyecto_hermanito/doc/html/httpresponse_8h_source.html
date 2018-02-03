@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Crawler - Similarity Web Search Engine: Fichero Fuente httpresponse.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Crawler - Similarity Web Search Engine
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Buscadorwebporsimilaridaddetextosentrepáginas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">httpresponse.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="httpresponse_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HTTPRESPONSE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HTTPRESPONSE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html" title="Contiene las definiciones de los tipos que usados.">types.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="httpheader_8h.html">httpheader.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>SWSE</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html">   14</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classSWSE_1_1httpResponse.html" title="Clase httpResponse, Contiene los datos de una respuesta de un servidor en el protocolo http...">httpResponse</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#a895f0481414f243a6f83012dea8ec35c">   20</a></span>&#160;    <a class="code" href="classSWSE_1_1httpResponse.html#a895f0481414f243a6f83012dea8ec35c" title="Constructor por default.">httpResponse</a>(){}</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#a06e4d9f23b1fce8f4169de226a0c7658">   25</a></span>&#160;    std::string &amp; <a class="code" href="classSWSE_1_1httpResponse.html#a06e4d9f23b1fce8f4169de226a0c7658" title="Obtiene versión de el protocolo http.">HTTPversion</a>(){<span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1httpResponse.html#a0e6bed7991be79a709f50a1ff2cecfba" title="Version de el protocolo http usado.">http_version</a>;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#a8f231c62d5037480c81b38d7dd581617">   30</a></span>&#160;    <a class="code" href="namespaceSWSE.html#ae7faea112290e7df836b0a3672219a3c">httpStatusC</a> &amp; <a class="code" href="classSWSE_1_1httpResponse.html#a8f231c62d5037480c81b38d7dd581617" title="Obtiene el codigo de estado del response.">HTTPstatusCode</a>(){<span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1httpResponse.html#a51a91c2ac3e7880f14f235dc5e221153" title="Codigo de estado de la respuesta de el servidor.">status_code</a>;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#a4a18fc559be0d0d29d1b60dd05a0f3d1">   35</a></span>&#160;    std::string &amp; <a class="code" href="classSWSE_1_1httpResponse.html#a4a18fc559be0d0d29d1b60dd05a0f3d1" title="Obtiene el mesage http.">HTTPmessage</a>(){<span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1httpResponse.html#a617e5c730cd37e761010b10634ff58c8" title="Mensaje de estado http.">status_message</a>;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#a5ff136a0d9e730acd2aad7d2e88527de">   41</a></span>&#160;    <a class="code" href="classSWSE_1_1httpHeader.html">httpHeader</a> &amp; <a class="code" href="classSWSE_1_1httpResponse.html#a5ff136a0d9e730acd2aad7d2e88527de" title="Obtiene la cabezera de la respuesta.">Header</a>(){<span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1httpResponse.html#aa063887fd25802552583924b57526ce9" title="Objeto de la cabecera http.">m_header</a>;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#a883511931cc27a69fe5cc83c0717ea7e">   46</a></span>&#160;    <a class="code" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a> &amp; <a class="code" href="classSWSE_1_1httpResponse.html#a883511931cc27a69fe5cc83c0717ea7e" title="Obtiene el cuerpo de la respuesta.">Body</a>(){<span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1httpResponse.html#aaee97e19a411e627a405b20b724e8bf7" title="Datos de el cuerpo de la respuesta.">m_body</a>;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#a143f32156cd0c2681e57a3a6ddcece78">   52</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSWSE_1_1httpResponse.html#a143f32156cd0c2681e57a3a6ddcece78" title="Cambia la cabezara.">setHeader</a>(<a class="code" href="namespaceSWSE.html#a8c6120c778ff7834c72a6dfdbb42242d">streambuffer</a> &amp; buf)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classSWSE_1_1httpResponse.html#aa063887fd25802552583924b57526ce9" title="Objeto de la cabecera http.">m_header</a>.<a class="code" href="classSWSE_1_1httpHeader.html#a5684dc76cbb12890160aad8b811ec2e4" title="Procesa el bufer para obtener los atributos.">processHeader</a>(buf);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#a0e6bed7991be79a709f50a1ff2cecfba">   59</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1httpResponse.html#a0e6bed7991be79a709f50a1ff2cecfba" title="Version de el protocolo http usado.">http_version</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#a51a91c2ac3e7880f14f235dc5e221153">   61</a></span>&#160;    <a class="code" href="namespaceSWSE.html#ae7faea112290e7df836b0a3672219a3c">httpStatusC</a> <a class="code" href="classSWSE_1_1httpResponse.html#a51a91c2ac3e7880f14f235dc5e221153" title="Codigo de estado de la respuesta de el servidor.">status_code</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#a617e5c730cd37e761010b10634ff58c8">   63</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1httpResponse.html#a617e5c730cd37e761010b10634ff58c8" title="Mensaje de estado http.">status_message</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#aa063887fd25802552583924b57526ce9">   66</a></span>&#160;    <a class="code" href="classSWSE_1_1httpHeader.html">httpHeader</a> <a class="code" href="classSWSE_1_1httpResponse.html#aa063887fd25802552583924b57526ce9" title="Objeto de la cabecera http.">m_header</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpResponse.html#aaee97e19a411e627a405b20b724e8bf7">   68</a></span>&#160;    <a class="code" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a>  <a class="code" href="classSWSE_1_1httpResponse.html#aaee97e19a411e627a405b20b724e8bf7" title="Datos de el cuerpo de la respuesta.">m_body</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  };</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}<span class="comment">//namespace SWSE</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // HTTPRESPONSE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 17 de Diciembre de 2012 13:37:43 para Crawler - Similarity Web Search Engine por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

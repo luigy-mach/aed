@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1285888730 source:c:\users\jason\desktop\grafos y algoritmos c++\dijkstra\main.cpp
+	<iostream>
+	"Grafo.h"
+	"windows.h"
+
+1285888590 c:\users\jason\desktop\grafos y algoritmos c++\dijkstra\grafo.h
+	<list>
+	<iostream>
+
+1285888730 source:j:\4to semestre\aki 4to semestre\grafos y algoritmos c++\dijkstra\main.cpp
+	<iostream>
+	"Grafo.h"
+	"windows.h"
+
+1385356490 j:\4to semestre\aki 4to semestre\grafos y algoritmos c++\dijkstra\grafo.h
+	<list>
+	<iostream>
+

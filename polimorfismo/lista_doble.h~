@@ -1,0 +1,96 @@
+#ifndef LISTA_DOBLE
+#define LISTA_DOBLE
+
+
+
+////////////////////////////////////////
+#include "estructura.h"
+#include "nodo.h"
+////////////////////////////////////////
+#include<iostream>
+using namespace std;
+
+
+//----------------------Clase NodoD ListaD----------------
+
+
+template<class T>
+class NodoD : public Nodo<T>{
+	public:
+		T m_Dato;
+		NodoD<T>* m_pSig;
+		NodoD<T>* m_pAnt;
+	public:
+		NodoD(T d):m_pSig(NULL),m_pAnt(NULL),m_Dato(d){}
+		~NodoD(){}
+};
+
+//------------------------Clase ListaD----------------------
+
+template<class T>
+class ListaD : public Estructura<T>{
+	public:
+		NodoD<T>* m_pHead;
+		ListaD():m_pHead(NULL){}		
+		bool find(T d,NodoD<T>**& p);
+		void print();
+	/////////////////////////////////////////
+		void find(T& in,T& out);
+		void insertar(const T& d);
+		void print_dot();
+	/////////////////////////////////////////
+		void insertar_rec(T d);
+		void ins_recusivo(T d,NodoD<T>** p,NodoD<T>**& tt);
+};
+
+//---------------------definiciones basicas-------------------
+
+template<class T>
+bool ListaD<T>::find(T d,NodoD<T>**& pp){
+	pp=&m_pHead;
+	while(*pp){
+		if((*pp)->m_Dato==d) return true;
+		if((*pp)->m_Dato<d) return false;
+		pp=&(*pp)->m_pSig;
+	}
+	return false;
+}
+
+template<class T>
+void ListaD<T>::print(){
+	NodoD<T>* temp=m_pHead;
+	while(temp){
+		cout<<" "<<temp->m_Dato;	
+		temp=temp->m_pSig;
+	}	
+	cout<<"-"<<endl;
+}
+
+
+template<class T>
+void ListaD<T>::insertar_rec(T d){
+	NodoD<T>** temp1=&m_pHead;	
+	NodoD<T>** temp2=NULL;
+	ins_recusivo(d,temp1,temp2);
+	return;
+}
+
+template<class T>
+void ListaD<T>::ins_recusivo(T d,NodoD<T>** p,NodoD<T>**& tt){
+	if(!(*p)){
+		(*p)=new NodoD<T>(d);
+		tt=p;
+		return;
+	}
+	ins_recusivo(d,&(*p)->m_pSig,tt);
+	if(!(*tt)->m_pAnt){
+		(*tt)->m_pAnt=(*p);
+		tt=p;
+	}
+}
+
+
+
+
+
+#endif

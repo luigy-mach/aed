@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1306869242 source:/home/josemiki/pila_T/main.cpp
+	<iostream>
+	"nodo.h"
+
+1306869480 /home/josemiki/pila_T/nodo.h
+	<iostream>
+

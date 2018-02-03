@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Crawler - Similarity Web Search Engine: Campos de datos</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Crawler - Similarity Web Search Engine
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Buscadorwebporsimilaridaddetextosentrepáginas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li class="current"><a href="functions.html"><span>Campos&#160;de&#160;datos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="functions.html"><span>Todo</span></a></li>
+      <li><a href="functions_func.html"><span>Funciones</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumeraciones</span></a></li>
+      <li><a href="functions_eval.html"><span>Valores&#160;de&#160;enumeraciones</span></a></li>
+      <li><a href="functions_rela.html"><span>Funciones&#160;relacionadas</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_w"><span>w</span></a></li>
+      <li><a href="#index_0x7e"><span>~</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">Lista de todos los campos de estructuras y uniones con enlaces a las estructuras/uniones a que pertenecen:</div>
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>AddHeader()
+: <a class="el" href="classSWSE_1_1httpRequest.html#a8ba0da6c1d54768a3b7632dc3efed94e">SWSE::httpRequest</a>
+</li>
+<li>AddURLprotocols()
+: <a class="el" href="classSWSE_1_1URL.html#affd416d44202db473bbbb60039a51f9a">SWSE::URL</a>
+</li>
+<li>attributes
+: <a class="el" href="classSWSE_1_1httpHeader.html#abdcd30aa7fb6bc013413c27d31250b5d">SWSE::httpHeader</a>
+, <a class="el" href="classSWSE_1_1httpRequest.html#ab1a4e33384cea2b0c6a22c0b08d5b4b9">SWSE::httpRequest</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>Body()
+: <a class="el" href="classSWSE_1_1httpResponse.html#a883511931cc27a69fe5cc83c0717ea7e">SWSE::httpResponse</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>cdp
+: <a class="el" href="classSWSE_1_1Parser.html#a5240d85ac15f786194e2b6afa2b54890">SWSE::Parser</a>
+</li>
+<li>close()
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#a99101a4618fea137908a1e830e809a37">SWSE::URLResolverClient</a>
+</li>
+<li>CLOSE
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#a3287e1a5d1cb4cc80b983509a94594e1aa197d4d3f116ced684df2562047f0129">SWSE::URLResolverClient</a>
+</li>
+<li>conneciones
+: <a class="el" href="classSWSE_1_1Crawler.html#ad6116e461533781e78c52ad91d46ad13">SWSE::Crawler</a>
+</li>
+<li>connect()
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#af5de55d08accd73acd7a787c0e720661">SWSE::URLResolverClient</a>
+</li>
+<li>CrawledDataProcessor()
+: <a class="el" href="classSWSE_1_1CrawledDataProcessor.html#ac32fa5134ab93fc3b0ed2735df897b7b">SWSE::CrawledDataProcessor</a>
+</li>
+<li>Crawler()
+: <a class="el" href="classSWSE_1_1Crawler.html#aaaa43c08c8f394db528881656d997509">SWSE::Crawler</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>date_
+: <a class="el" href="structSWSE_1_1URLResolveResponse.html#aa13484e576d8f426f33c3faec9ddf04b">SWSE::URLResolveResponse</a>
+</li>
+<li>dir_base
+: <a class="el" href="classSWSE_1_1URL.html#aa8e145b94fb808151c3ae530e93ac651">SWSE::URL</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>genFileName()
+: <a class="el" href="classSWSE_1_1Parser.html#a4556ec87325e1476ff53cac17d2e564e">SWSE::Parser</a>
+</li>
+<li>get_links()
+: <a class="el" href="classSWSE_1_1Parser.html#a79741af0b8fb8e39d5e75bd72c3da29b">SWSE::Parser</a>
+</li>
+<li>getAttr()
+: <a class="el" href="classSWSE_1_1httpHeader.html#a87f73be6e7d047a10f6271ea1d474bea">SWSE::httpHeader</a>
+</li>
+<li>getHost()
+: <a class="el" href="classSWSE_1_1URL.html#ac9d8c4f109bfe08118ddc3cded90e946">SWSE::URL</a>
+</li>
+<li>getPath()
+: <a class="el" href="classSWSE_1_1URL.html#a1530d4b856ae1d1c26eec2a1c926b235">SWSE::URL</a>
+</li>
+<li>getPathBase()
+: <a class="el" href="classSWSE_1_1URL.html#a023c309afe4bca72bbf827d4d090adb7">SWSE::URL</a>
+</li>
+<li>getProtocol()
+: <a class="el" href="classSWSE_1_1URL.html#a418157d374f4c149170c0f23ba9a25c6">SWSE::URL</a>
+</li>
+<li>getQuery()
+: <a class="el" href="classSWSE_1_1URL.html#a7f3d03ffb0049f92a560308a4258ef92">SWSE::URL</a>
+</li>
+<li>getRegister()
+: <a class="el" href="classSWSE_1_1Crawler.html#ac215b5a76d4f3d4e7f93caae37bbb7cd">SWSE::Crawler</a>
+</li>
+<li>getResponse()
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#a1c5ae4c6e6b4485bdff563bad379a19e">SWSE::httpAsyncClient</a>
+</li>
+<li>getURL()
+: <a class="el" href="classSWSE_1_1httpRequest.html#af4c639b289a615d450060f7d4238ff54">SWSE::httpRequest</a>
+</li>
+<li>getURLpointTo()
+: <a class="el" href="classSWSE_1_1URLregister.html#a6c5ae49c4626083de3fc256a3b1756d0">SWSE::URLregister</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>handle_connect()
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#a6365ca680a86e211dabad0a3779d7eea">SWSE::httpAsyncClient</a>
+</li>
+<li>handle_read_content()
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#af3dab2bb49add919a2c116d828426239">SWSE::httpAsyncClient</a>
+</li>
+<li>handle_read_headers()
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#ae592e0a8d2fc70790969ce16397867f1">SWSE::httpAsyncClient</a>
+</li>
+<li>handle_read_status_line()
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#a021cdea01aecd2f7fcae583bcfd8d003">SWSE::httpAsyncClient</a>
+</li>
+<li>handle_resolve()
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#a6d826d788141ff5b5211d1c537cc884d">SWSE::httpAsyncClient</a>
+</li>
+<li>handle_write_request()
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#aeb071119814882af9b690c76751fb78a">SWSE::httpAsyncClient</a>
+</li>
+<li>hash()
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#a339430b09eba216a7c69719af53acc11">SWSE::URLResolverClient</a>
+</li>
+<li>HASH
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#a3287e1a5d1cb4cc80b983509a94594e1a1d3dc56195fdef1c1eea73c8752f7f1c">SWSE::URLResolverClient</a>
+</li>
+<li>hash()
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#ae8b0b15948f306ed618a06bcf3feadf0">SWSE::URLResolverClient</a>
+</li>
+<li>HashURL()
+: <a class="el" href="classSWSE_1_1URLregister.html#a5c6c403705aacb2902e073f4bd68c127">SWSE::URLregister</a>
+</li>
+<li>Header()
+: <a class="el" href="classSWSE_1_1httpResponse.html#a5ff136a0d9e730acd2aad7d2e88527de">SWSE::httpResponse</a>
+</li>
+<li>host
+: <a class="el" href="classSWSE_1_1URL.html#ad7f9da3908b5e13fe245c4e8308e6800">SWSE::URL</a>
+</li>
+<li>http_version
+: <a class="el" href="classSWSE_1_1httpResponse.html#a0e6bed7991be79a709f50a1ff2cecfba">SWSE::httpResponse</a>
+</li>
+<li>httpAsyncClient()
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64">SWSE::httpAsyncClient</a>
+</li>
+<li>httpHeader()
+: <a class="el" href="classSWSE_1_1httpHeader.html#a5274ca6feb006a2e5c8471fe8c2c90c1">SWSE::httpHeader</a>
+</li>
+<li>HTTPmessage()
+: <a class="el" href="classSWSE_1_1httpResponse.html#a4a18fc559be0d0d29d1b60dd05a0f3d1">SWSE::httpResponse</a>
+</li>
+<li>httpRequest()
+: <a class="el" href="classSWSE_1_1httpRequest.html#ad3a5c5ea759a90dbb08422888ea663d7">SWSE::httpRequest</a>
+</li>
+<li>httpResponse()
+: <a class="el" href="classSWSE_1_1httpResponse.html#a895f0481414f243a6f83012dea8ec35c">SWSE::httpResponse</a>
+</li>
+<li>HTTPstatusCode()
+: <a class="el" href="classSWSE_1_1httpResponse.html#a8f231c62d5037480c81b38d7dd581617">SWSE::httpResponse</a>
+</li>
+<li>HTTPversion()
+: <a class="el" href="classSWSE_1_1httpResponse.html#a06e4d9f23b1fce8f4169de226a0c7658">SWSE::httpResponse</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>init()
+: <a class="el" href="classSWSE_1_1httpRequest.html#a00ebd1cac425fc58f45a8a0948b223c0">SWSE::httpRequest</a>
+</li>
+<li>insert()
+: <a class="el" href="classSWSE_1_1URLregister.html#adeac4480236bc7afe69e4f4ae0895fd7">SWSE::URLregister</a>
+</li>
+<li>InvalidProtocol()
+: <a class="el" href="classSWSE_1_1InvalidProtocol.html#a1e40bd579f417d3559e73024b1891f95">SWSE::InvalidProtocol</a>
+</li>
+<li>InvalidURL()
+: <a class="el" href="classSWSE_1_1InvalidURL.html#ae5fc9fa3b39ae824212fc4f00c5ec049">SWSE::InvalidURL</a>
+</li>
+<li>isON()
+: <a class="el" href="classSWSE_1_1Crawler.html#a411c15c5beca7d177cf0f01db7ab4fb6">SWSE::Crawler</a>
+</li>
+<li>isValidURLscheme()
+: <a class="el" href="classSWSE_1_1URL.html#aaca91ee4a5f327f6b29749857d216beb">SWSE::URL</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>loadData()
+: <a class="el" href="classSWSE_1_1URLregister.html#a6f2f3956d96354686a214d1ba55cba5c">SWSE::URLregister</a>
+</li>
+<li>loadQueue()
+: <a class="el" href="classSWSE_1_1Crawler.html#a076d88c9a2ce09538d862c9bcb9aa183">SWSE::Crawler</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>m
+: <a class="el" href="structSWSE_1_1wrapper.html#a2457172b92aad27ae8fe495048db9384">SWSE::wrapper</a>
+</li>
+<li>m_body
+: <a class="el" href="classSWSE_1_1httpResponse.html#aaee97e19a411e627a405b20b724e8bf7">SWSE::httpResponse</a>
+</li>
+<li>m_data
+: <a class="el" href="classSWSE_1_1URLDownloader.html#aaabda5860c2f785038e62d66064fcb5f">SWSE::URLDownloader</a>
+, <a class="el" href="classSWSE_1_1URLregister.html#a14e10a7d80f642d1ec8cc7169fac3f0b">SWSE::URLregister</a>
+, <a class="el" href="classSWSE_1_1CrawledDataProcessor.html#a5442b79ad85cedac71b7080cdf52e40f">SWSE::CrawledDataProcessor</a>
+</li>
+<li>m_header
+: <a class="el" href="classSWSE_1_1httpResponse.html#aa063887fd25802552583924b57526ce9">SWSE::httpResponse</a>
+</li>
+<li>m_id
+: <a class="el" href="classSWSE_1_1URLDownloader.html#aeefda81bf8c1ba656041fd6f15c7c99e">SWSE::URLDownloader</a>
+</li>
+<li>m_request
+: <a class="el" href="classSWSE_1_1URLDownloader.html#ac44f8cce0640b227e8d0089150ae50a5">SWSE::URLDownloader</a>
+</li>
+<li>m_url
+: <a class="el" href="classSWSE_1_1httpRequest.html#ae7a73a1911da88891b19341473f4febc">SWSE::httpRequest</a>
+, <a class="el" href="classSWSE_1_1URL.html#a8cda0953a9518e61abf59b57c7ee6dae">SWSE::URL</a>
+, <a class="el" href="classSWSE_1_1URLDownloader.html#a6bc8dcbf042ba292ddd1ceb1c95bf83d">SWSE::URLDownloader</a>
+</li>
+<li>m_urlregist
+: <a class="el" href="classSWSE_1_1Crawler.html#af67fe7f5badf995642af1df84ccb2e4e">SWSE::Crawler</a>
+</li>
+<li>makeSet()
+: <a class="el" href="classSWSE_1_1URL.html#ae1fadc4d1acf0291e1831908dc0c88c6">SWSE::URL</a>
+</li>
+<li>method
+: <a class="el" href="classSWSE_1_1httpRequest.html#a8ae6a92ff2a333fd16622128b8be0c12">SWSE::httpRequest</a>
+</li>
+<li>MinWriteSize
+: <a class="el" href="classSWSE_1_1CrawledDataProcessor.html#a0b1c90a0d88310f12e68b64174c04817">SWSE::CrawledDataProcessor</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>NumThreads
+: <a class="el" href="classSWSE_1_1Crawler.html#ad14105f92f2c9681519009298e0cede4">SWSE::Crawler</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>oFile
+: <a class="el" href="classSWSE_1_1CrawledDataProcessor.html#ace95523026b7d1c1bde5bda6b091d921">SWSE::CrawledDataProcessor</a>
+</li>
+<li>ON
+: <a class="el" href="classSWSE_1_1Crawler.html#a31213d4a8cf4093b3ac96e6b5d14cf3b">SWSE::Crawler</a>
+</li>
+<li>operator()()
+: <a class="el" href="classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390">SWSE::URLDownloader</a>
+, <a class="el" href="structSWSE_1_1wrapper.html#a8447f9e31c727518ff8381988cea881f">SWSE::wrapper</a>
+</li>
+<li>operator&lt;&lt;
+: <a class="el" href="classSWSE_1_1URL.html#a220aec4c0b3b5cd0d30e93dfdfadeef7">SWSE::URL</a>
+, <a class="el" href="classSWSE_1_1httpHeader.html#aefebcf899f0e9393d58064ae7b3003c4">SWSE::httpHeader</a>
+, <a class="el" href="classSWSE_1_1httpRequest.html#abee77aece8a0d4f21a12d708bf59d83b">SWSE::httpRequest</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>parser
+: <a class="el" href="classSWSE_1_1URLDownloader.html#ad5ba810e901720495bd565d35bb0ca43">SWSE::URLDownloader</a>
+</li>
+<li>Parser()
+: <a class="el" href="classSWSE_1_1Parser.html#a09bfdcafea4b858318d5c05cbabc9259">SWSE::Parser</a>
+</li>
+<li>path
+: <a class="el" href="classSWSE_1_1URL.html#aa48da00b17b98fc294a859b6492f1867">SWSE::URL</a>
+</li>
+<li>poolThread
+: <a class="el" href="classSWSE_1_1Crawler.html#a9a37cd69f9359c97f7ddaa1f78106078">SWSE::Crawler</a>
+</li>
+<li>PopURL()
+: <a class="el" href="classSWSE_1_1Crawler.html#ab1014bf1ef60447b0cba6af9ccd0c1fb">SWSE::Crawler</a>
+</li>
+<li>processHeader()
+: <a class="el" href="classSWSE_1_1httpHeader.html#a5684dc76cbb12890160aad8b811ec2e4">SWSE::httpHeader</a>
+</li>
+<li>processURL()
+: <a class="el" href="classSWSE_1_1URL.html#a8d41480128e4bead6e357c1ebd290f05">SWSE::URL</a>
+</li>
+<li>protocol
+: <a class="el" href="classSWSE_1_1URL.html#adcdb708f7abb62d38dbb65b3178d3aab">SWSE::URL</a>
+</li>
+<li>ptr_crawler
+: <a class="el" href="classSWSE_1_1Parser.html#ab6a08fcc26f4e5e4cb4e2547ecea8230">SWSE::Parser</a>
+, <a class="el" href="classSWSE_1_1URLDownloader.html#a6f04a0495cba7e6be669dc468ab188fe">SWSE::URLDownloader</a>
+</li>
+<li>ptr_request
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#a33add37a4bafdf4f37a065eb96a5933e">SWSE::httpAsyncClient</a>
+</li>
+<li>ptr_response
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#a4301f0bf0748509273e0e459becba242">SWSE::httpAsyncClient</a>
+</li>
+<li>ptr_uri
+: <a class="el" href="classSWSE_1_1URL.html#a6790af2166696c5e8d4a8f1b46d24026">SWSE::URL</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>queueURL()
+: <a class="el" href="classSWSE_1_1Crawler.html#a471bd269327e656894f6d9950c65a3b6">SWSE::Crawler</a>
+</li>
+<li>queueURLlist()
+: <a class="el" href="classSWSE_1_1URLDownloader.html#ad712f367c375a790beb27350a80a7d4a">SWSE::URLDownloader</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>rc
+: <a class="el" href="classSWSE_1_1URLDownloader.html#aef583d25861ea7645fec05412cce55a0">SWSE::URLDownloader</a>
+</li>
+<li>reg_word
+: <a class="el" href="classSWSE_1_1Parser.html#aa013beb017757bdda49c447fef763061">SWSE::Parser</a>
+</li>
+<li>reg_word_script
+: <a class="el" href="classSWSE_1_1Parser.html#a761fce3dbfae8c5d9f36251114892a6e">SWSE::Parser</a>
+</li>
+<li>reg_word_style
+: <a class="el" href="classSWSE_1_1Parser.html#aa878c3e12781870d3ef9b7c6f778673f">SWSE::Parser</a>
+</li>
+<li>reg_word_tag
+: <a class="el" href="classSWSE_1_1Parser.html#a5c3547c863e0c556752912f2f73a7a17">SWSE::Parser</a>
+</li>
+<li>Rel2AbsPath()
+: <a class="el" href="classSWSE_1_1URL.html#adeaa57ab089219dc863b82c795f23e38">SWSE::URL</a>
+</li>
+<li>Request()
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#a85f131a44ddbe0d5e5543a9239a98363">SWSE::URLResolverClient</a>
+</li>
+<li>requestType
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#a3287e1a5d1cb4cc80b983509a94594e1">SWSE::URLResolverClient</a>
+</li>
+<li>resolve()
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#aa7149793bf41bf3869b66cf2375dded3">SWSE::URLResolverClient</a>
+</li>
+<li>resolver_
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#a85ca7c838f62c3bc5db42a1649d3e266">SWSE::httpAsyncClient</a>
+, <a class="el" href="classSWSE_1_1URLResolverClient.html#ad72fcea163ef79f89b3826878aa99c05">SWSE::URLResolverClient</a>
+</li>
+<li>response_
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#aa8c56f3f7eb7438106cf6956a72f4076">SWSE::httpAsyncClient</a>
+</li>
+<li>run()
+: <a class="el" href="classSWSE_1_1Crawler.html#a1b1d9d08fa4487ebcaa7cf4e9416aaf1">SWSE::Crawler</a>
+, <a class="el" href="classSWSE_1_1Parser.html#af4fd4f86f306ffb7f9bf3c3719d1dae9">SWSE::Parser</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>save()
+: <a class="el" href="classSWSE_1_1CrawledDataProcessor.html#a7b47fc4ba3d5432f9f79d221ba761a6e">SWSE::CrawledDataProcessor</a>
+</li>
+<li>saveData()
+: <a class="el" href="classSWSE_1_1Parser.html#a3d1bf01ea4965938d68db4c555bf304a">SWSE::Parser</a>
+, <a class="el" href="classSWSE_1_1URLregister.html#a43b6d2d58b3c508dc668f62d0160b972">SWSE::URLregister</a>
+</li>
+<li>saveQueue()
+: <a class="el" href="classSWSE_1_1Crawler.html#accd9a59cef8069b2648f5734153171ec">SWSE::Crawler</a>
+</li>
+<li>SET_DATE
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#a3287e1a5d1cb4cc80b983509a94594e1ac438f9e74869dbe5f7b8eb3c55c3a515">SWSE::URLResolverClient</a>
+</li>
+<li>setDate()
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#ace901acb131ebc01d63467241cf164ed">SWSE::URLResolverClient</a>
+</li>
+<li>setFile()
+: <a class="el" href="classSWSE_1_1URL.html#a20b52ac4dd69ddc11cc2980250c757f5">SWSE::URL</a>
+</li>
+<li>setHeader()
+: <a class="el" href="classSWSE_1_1httpResponse.html#a143f32156cd0c2681e57a3a6ddcece78">SWSE::httpResponse</a>
+</li>
+<li>setHost()
+: <a class="el" href="classSWSE_1_1URL.html#ad261d4392a856bda47ab6f62f46876c4">SWSE::URL</a>
+</li>
+<li>setProtocol()
+: <a class="el" href="classSWSE_1_1URL.html#afae04d78c9be8228d417bdf0679e7119">SWSE::URL</a>
+</li>
+<li>setURL()
+: <a class="el" href="classSWSE_1_1httpRequest.html#acb11a63a2db862b809fad657ca922b89">SWSE::httpRequest</a>
+</li>
+<li>setURLResolverClient()
+: <a class="el" href="classSWSE_1_1Parser.html#a6f0fe17349cb6affdff2b7c69f9cad6f">SWSE::Parser</a>
+</li>
+<li>socket_
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#a6484062661c092f958db04ec85855d6a">SWSE::URLResolverClient</a>
+, <a class="el" href="classSWSE_1_1httpAsyncClient.html#a07fafefe9479887730642598280f11fd">SWSE::httpAsyncClient</a>
+</li>
+<li>status_code
+: <a class="el" href="classSWSE_1_1httpResponse.html#a51a91c2ac3e7880f14f235dc5e221153">SWSE::httpResponse</a>
+</li>
+<li>status_message
+: <a class="el" href="classSWSE_1_1httpResponse.html#a617e5c730cd37e761010b10634ff58c8">SWSE::httpResponse</a>
+</li>
+<li>string()
+: <a class="el" href="classSWSE_1_1URL.html#a59e352b95b83842ccf0121263525fcc3">SWSE::URL</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>TamCola
+: <a class="el" href="classSWSE_1_1Crawler.html#a9eecac8c8569fd2b39bff37eef23eb7f">SWSE::Crawler</a>
+</li>
+<li>threadid
+: <a class="el" href="classSWSE_1_1URLDownloader.html#aa101774e6e494799fd9a8503e0d6fde7">SWSE::URLDownloader</a>
+</li>
+<li>to_plain_text()
+: <a class="el" href="classSWSE_1_1Parser.html#a1fdeb8c8d9bc17abcf6a45b0b4e73800">SWSE::Parser</a>
+</li>
+<li>turnOff()
+: <a class="el" href="classSWSE_1_1Crawler.html#a882129b8e5b4b61262b2a5c12443731f">SWSE::Crawler</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>URL
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#a3287e1a5d1cb4cc80b983509a94594e1a2953252f533d084234513e8fb8bf7f4f">SWSE::URLResolverClient</a>
+, <a class="el" href="classSWSE_1_1URL.html#a337219715e162c539875ad30725b5f0a">SWSE::URL</a>
+</li>
+<li>url_
+: <a class="el" href="structSWSE_1_1URLResolveResponse.html#a2539d55f5a8dd1cbeaef4302a531e246">SWSE::URLResolveResponse</a>
+</li>
+<li>URLDownloader()
+: <a class="el" href="classSWSE_1_1URLDownloader.html#a043f9953fa04072440b499012dc7532f">SWSE::URLDownloader</a>
+</li>
+<li>urlencode()
+: <a class="el" href="classSWSE_1_1URL.html#a2053df422e69981b91475e7df04a7b6a">SWSE::URL</a>
+</li>
+<li>URLexception()
+: <a class="el" href="classSWSE_1_1URLexception.html#a3fea74a9e4394a016296af51e1c9ef43">SWSE::URLexception</a>
+</li>
+<li>URLprotocols
+: <a class="el" href="classSWSE_1_1URL.html#ad51f0b7191d2f732a53c4713d04843f8">SWSE::URL</a>
+</li>
+<li>urlQueue
+: <a class="el" href="classSWSE_1_1Crawler.html#aeabdd3e4425d8dfa2a6eac799ba2512c">SWSE::Crawler</a>
+</li>
+<li>URLregister()
+: <a class="el" href="classSWSE_1_1URLregister.html#ab329424cd0c6e53faaa88609e9850b0c">SWSE::URLregister</a>
+</li>
+<li>urlResolver
+: <a class="el" href="classSWSE_1_1Parser.html#a12558445129dbb2dc7d2a8ac1500380b">SWSE::Parser</a>
+</li>
+<li>URLResolverClient()
+: <a class="el" href="classSWSE_1_1URLResolverClient.html#a02aa9219dd6ee8cc5b28e59e28cc3f55">SWSE::URLResolverClient</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>what()
+: <a class="el" href="classSWSE_1_1URLexception.html#ad5044b4f8b1a0b0dd5d1bcc74c93b589">SWSE::URLexception</a>
+</li>
+<li>what_
+: <a class="el" href="classSWSE_1_1URLexception.html#ac061221cbcac9fa1e71329a45bcb2dea">SWSE::URLexception</a>
+</li>
+<li>WriteSocket()
+: <a class="el" href="classSWSE_1_1httpRequest.html#a318f360b30b05074f5a09e2581b1229c">SWSE::httpRequest</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_0x7e"></a>- ~ -</h3><ul>
+<li>~CrawledDataProcessor()
+: <a class="el" href="classSWSE_1_1CrawledDataProcessor.html#a2ecc2538ab47ee258fc8964144b67ee9">SWSE::CrawledDataProcessor</a>
+</li>
+<li>~httpAsyncClient()
+: <a class="el" href="classSWSE_1_1httpAsyncClient.html#accbbd65dc1c811e1ec00e9f1ee0f9cd3">SWSE::httpAsyncClient</a>
+</li>
+<li>~Parser()
+: <a class="el" href="classSWSE_1_1Parser.html#a3e658b5917a93a3ef648050d060e3a93">SWSE::Parser</a>
+</li>
+<li>~URL()
+: <a class="el" href="classSWSE_1_1URL.html#a823d9889f889c65ee04dfc737a175dbd">SWSE::URL</a>
+</li>
+<li>~URLDownloader()
+: <a class="el" href="classSWSE_1_1URLDownloader.html#a8fd02ead706ebaa5f4801af35dd78305">SWSE::URLDownloader</a>
+</li>
+<li>~URLexception()
+: <a class="el" href="classSWSE_1_1URLexception.html#ac9323c9b2862230570aba7e70e519cfc">SWSE::URLexception</a>
+</li>
+<li>~URLregister()
+: <a class="el" href="classSWSE_1_1URLregister.html#ad9a46334a7ed9c447fe3cbae1d1c1222">SWSE::URLregister</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 17 de Diciembre de 2012 13:37:43 para Crawler - Similarity Web Search Engine por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

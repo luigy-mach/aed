@@ -1,0 +1,15 @@
+digraph{
+ abacus -> abaft;
+ abacus -> aardvark;
+ abaft -> aback;
+ aback -> ab;
+ ab -> c;
+ c -> b;
+ c -> d;
+ b -> a;
+ aardvark -> abalone;
+ aardvark -> aardvarks;
+ abalone -> abalones;
+ aardvarks -> abacuses;
+ aardvarks -> abacterial;
+}

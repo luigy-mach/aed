@@ -1,0 +1,35 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[activeacute,spanish]{babel} %Para el idioma español
+\usepackage[latin1]{inputenc} %para incluir eñe, puntuación
+\usepackage{anysize} %margenes
+\usepackage{listings} %para incluir archivos c++ y otros
+
+\marginsize{1cm}{1cm}{1.5cm}{1.5cm}
+%margenes izquierda, derecha, superior, inferior respectivamente
+
+\begin{document}
+
+\begin{center}
+\textbf{Polimorfismo en C++\\Jos\'e Miguel Huam\'an Cruz,
+josemiki24@gmail.com\\
+Escuela Profesional de Ciencia de la Computación\\
+Facultad de Producción y Servicios\\
+Universidad Nacional de San Agustín\\}
+\end{center}
+
+\lstset{numbers=left, numberstyle=\tiny} %enumerado del código en la parte izquierda
+
+\lstset{frameround=tttt}
+%esquina ovaladas derecha superior, derecha inferior, izquierda inferior, izquierda superior, respectivamente
+
+\lstset{showstringspaces=false} %para no mostrar la separación de cadena
+
+%\section{MatrizOperations.h}
+
+%\lstinputlisting[language=C++,frame={btrl}]{MatrizOperations.h}
+%frame b=bottom, t=top, r=right, l=left
+
+\section{Pro.cpp}
+\lstinputlisting[language=C++,frame={btrl}]{pro.cpp}
+frame b=bottom, t=top, r=right, l=left
+\end{document}

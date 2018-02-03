@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1317848128 source:/home/josue/Escritorio/arboles binarios/btree.cpp
+	"btree.h"
+
+1317848128 /home/josue/Escritorio/arboles binarios/btree.h
+
+1317848461 source:/home/josue/Escritorio/arboles binarios/main.cpp
+	<iostream>
+
+1317847819 source:/home/josue/Escritorio/arboles binarios/nodo.cpp
+	"nodo.h"
+
+1317850808 /home/josue/Escritorio/arboles binarios/nodo.h
+
+1318471204 source:/home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/main.cpp
+	"btree.cpp"
+	<iostream>
+	<vector>
+
+1318178427 source:/home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/nodo.cpp
+	"nodo.h"
+
+1318176976 /home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/nodo.h
+
+1318178714 source:/home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/btree.cpp
+	"btree.h"
+	"pila.cpp"
+	"cola.cpp"
+	<iostream>
+
+1318178714 /home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/btree.h
+	"nodo.h"
+
+1318175263 /home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/pila.cpp
+	"pila.h"
+	"nodopc.h"
+
+1318175275 /home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/pila.h
+	"nodopc.h"
+
+1318175377 /home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/nodopc.h
+
+1318175200 /home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/cola.cpp
+	"cola.h"
+
+1318175230 /home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/cola.h
+	"nodopc.h"
+
+1318175200 source:/home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/cola.cpp
+	"cola.h"
+
+1318175377 source:/home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/nodopc.cpp
+	"nodopc.h"
+
+1318175263 source:/home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/pila.cpp
+	"pila.h"
+	"nodopc.h"
+
+1318178714 /home/josemiki/Escritorio/Estructuras de Datos I/arboles binarios/btree.cpp
+	"btree.h"
+	"pila.cpp"
+	"cola.cpp"
+	<iostream>
+

@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Introducci\'on}{3}{0}{1}
+\beamer@sectionintoc {2}{Definici\'on}{4}{0}{2}
+\beamer@sectionintoc {3}{Ejemplos}{6}{0}{3}
+\beamer@sectionintoc {4}{Aplicaci\'on}{12}{0}{4}
+\beamer@sectionintoc {5}{References}{13}{0}{5}

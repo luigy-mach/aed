@@ -1,0 +1,14 @@
+digraph{
+ luigy9 -> luigy4;
+ luigy9 -> luigy11;
+ luigy4 -> luigy2;
+ luigy4 -> luigy6;
+ luigy2 -> luigy1;
+ luigy2 -> luigy3;
+ luigy6 -> luigy5;
+ luigy6 -> luigy8;
+ luigy11 -> luigy10;
+ luigy11 -> luigy13;
+ luigy13 -> luigy12;
+ luigy13 -> luigy15;
+}

@@ -1,0 +1,7 @@
+<map id="SWSE::URLregister::HashURL" name="SWSE::URLregister::HashURL">
+<area shape="rect" id="node3" href="$classSWSE_1_1URLregister.html#adeac4480236bc7afe69e4f4ae0895fd7" title="SWSE::URLregister:\l:insert" alt="" coords="197,5,341,51"/>
+<area shape="rect" id="node11" href="$classSWSE_1_1URLregister.html#a6c5ae49c4626083de3fc256a3b1756d0" title="SWSE::URLregister:\l:getURLpointTo" alt="" coords="197,74,341,121"/>
+<area shape="rect" id="node5" href="$classSWSE_1_1Parser.html#a79741af0b8fb8e39d5e75bd72c3da29b" title="Take string input and return link list." alt="" coords="389,13,557,43"/>
+<area shape="rect" id="node7" href="$classSWSE_1_1Parser.html#af4fd4f86f306ffb7f9bf3c3719d1dae9" title="SWSE::Parser::run" alt="" coords="607,13,740,43"/>
+<area shape="rect" id="node9" href="$classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390" title="Inicia la ejcución de las descargas." alt="" coords="791,5,956,51"/>
+</map>

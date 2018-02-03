@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Crawler - Similarity Web Search Engine: Fichero Fuente httprequest.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Crawler - Similarity Web Search Engine
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Buscadorwebporsimilaridaddetextosentrepáginas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">httprequest.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="httprequest_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HTTPREQUEST_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HTTPREQUEST_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="URL_8h.html">URL.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>SWSE</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpRequest.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSWSE_1_1httpRequest.html">httpRequest</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classSWSE_1_1httpRequest.html#a0e9e6edacf07cf6aa785c130f286e7c5" title="Constructor por default.">httpRequest</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classSWSE_1_1httpRequest.html#a0e9e6edacf07cf6aa785c130f286e7c5" title="Constructor por default.">httpRequest</a>(<a class="code" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> &amp; url);</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpRequest.html#acb11a63a2db862b809fad657ca922b89">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSWSE_1_1httpRequest.html#acb11a63a2db862b809fad657ca922b89" title="Cambia la URL del request.">setURL</a>(<a class="code" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> val){<a class="code" href="classSWSE_1_1httpRequest.html#ae7a73a1911da88891b19341473f4febc" title="Dirección a la que se hará la solicitud.">m_url</a> = val;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSWSE_1_1httpRequest.html#a318f360b30b05074f5a09e2581b1229c" title="Envia la petición en el socket.">WriteSocket</a>(<a class="code" href="namespaceSWSE.html#a1856750e4520fcea86f5cb259cc398ac">socket_t</a> &amp; socket);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSWSE_1_1httpRequest.html#a8ba0da6c1d54768a3b7632dc3efed94e" title="Agrega una cabecera a la peticion.">AddHeader</a>(std::string name,std::string val);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSWSE_1_1httpRequest.html#a00ebd1cac425fc58f45a8a0948b223c0" title="Genera los datos minimos para un request http.">init</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpRequest.html#af4c639b289a615d450060f7d4238ff54">   50</a></span>&#160;    <a class="code" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a>* <a class="code" href="classSWSE_1_1httpRequest.html#af4c639b289a615d450060f7d4238ff54">getURL</a>()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">return</span> &amp;<a class="code" href="classSWSE_1_1httpRequest.html#ae7a73a1911da88891b19341473f4febc" title="Dirección a la que se hará la solicitud.">m_url</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">friend</span> std::ostream &amp; <a class="code" href="classSWSE_1_1httpRequest.html#abee77aece8a0d4f21a12d708bf59d83b">operator&lt;&lt;</a>(std::ostream &amp; os, <a class="code" href="classSWSE_1_1httpRequest.html">httpRequest</a>* req);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpRequest.html#ae7a73a1911da88891b19341473f4febc">   58</a></span>&#160;    <a class="code" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> <a class="code" href="classSWSE_1_1httpRequest.html#ae7a73a1911da88891b19341473f4febc" title="Dirección a la que se hará la solicitud.">m_url</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpRequest.html#a8ae6a92ff2a333fd16622128b8be0c12">   59</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1httpRequest.html#a8ae6a92ff2a333fd16622128b8be0c12">method</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="classSWSE_1_1httpRequest.html#ab1a4e33384cea2b0c6a22c0b08d5b4b9">   60</a></span>&#160;    <a class="code" href="namespaceSWSE.html#a378931a8f76a56a8e0c93207383d5b4a" title="Mapea un string apartír de otro string.">mapstrstr</a> <a class="code" href="classSWSE_1_1httpRequest.html#ab1a4e33384cea2b0c6a22c0b08d5b4b9">attributes</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}<span class="comment">//namespace SWSE</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // HTTPREQUEST_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 17 de Diciembre de 2012 13:37:43 para Crawler - Similarity Web Search Engine por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

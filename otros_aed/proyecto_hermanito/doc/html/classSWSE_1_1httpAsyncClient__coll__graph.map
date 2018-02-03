@@ -1,0 +1,6 @@
+<map id="SWSE::httpAsyncClient" name="SWSE::httpAsyncClient">
+<area shape="rect" id="node2" href="$classSWSE_1_1httpResponse.html" title="Clase httpResponse, Contiene los datos de una respuesta de un servidor en el protocolo http..." alt="" coords="5,558,155,799"/>
+<area shape="rect" id="node4" href="$classSWSE_1_1httpHeader.html" title="{SWSE::httpHeader\n|&#45; attributes\l|+ httpHeader()\l+ httpHeader()\l+ getAttr()\l+ processHeader()\l}" alt="" coords="13,179,147,317"/>
+<area shape="rect" id="node6" href="$classSWSE_1_1httpRequest.html" title="{SWSE::httpRequest\n|&#45; method\l&#45; attributes\l|+ httpRequest()\l+ httpRequest()\l+ setURL()\l+ WriteSocket()\l+ AddHeader()\l+ init()\l+ getURL()\l}" alt="" coords="179,575,320,782"/>
+<area shape="rect" id="node8" href="$classSWSE_1_1URL.html" title="Clase URL." alt="" coords="172,6,327,490"/>
+</map>

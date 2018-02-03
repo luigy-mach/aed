@@ -1,0 +1,6 @@
+0 archivo 
+1 editar 
+2 si 
+3 no 
+4 me 
+5 texto

@@ -1,0 +1,11 @@
+<map id="SWSE::httpResponse::Body" name="SWSE::httpResponse::Body">
+<area shape="rect" id="node3" href="$classSWSE_1_1httpAsyncClient.html#af3dab2bb49add919a2c116d828426239" title="Lee el contenido del cuerpo del request." alt="" coords="205,7,368,54"/>
+<area shape="rect" id="node17" href="$classSWSE_1_1Parser.html#af4fd4f86f306ffb7f9bf3c3719d1dae9" title="SWSE::Parser::run" alt="" coords="220,79,353,108"/>
+<area shape="rect" id="node5" href="$classSWSE_1_1httpAsyncClient.html#ae592e0a8d2fc70790969ce16397867f1" title="Inicia la lectura de el contenido." alt="" coords="419,5,581,51"/>
+<area shape="rect" id="node7" href="$classSWSE_1_1httpAsyncClient.html#a021cdea01aecd2f7fcae583bcfd8d003" title="Lee la cabezera http recibida de el servidor." alt="" coords="632,5,803,51"/>
+<area shape="rect" id="node9" href="$classSWSE_1_1httpAsyncClient.html#aeb071119814882af9b690c76751fb78a" title="Lee la linea de estado recibidos por el servidor." alt="" coords="851,5,1013,51"/>
+<area shape="rect" id="node11" href="$classSWSE_1_1httpAsyncClient.html#a6365ca680a86e211dabad0a3779d7eea" title="Envía el request al servidor." alt="" coords="1061,5,1224,51"/>
+<area shape="rect" id="node13" href="$classSWSE_1_1httpAsyncClient.html#a6d826d788141ff5b5211d1c537cc884d" title="Realiza la conexión con el servidor." alt="" coords="1272,5,1435,51"/>
+<area shape="rect" id="node15" href="$classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64" title="Constructor." alt="" coords="1483,5,1645,51"/>
+<area shape="rect" id="node19" href="$classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390" title="Inicia la ejcución de las descargas." alt="" coords="417,74,583,121"/>
+</map>

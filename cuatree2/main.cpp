@@ -1,0 +1,90 @@
+
+#include <fstream>
+#include "CImg.h"
+
+#include <fstream>
+using namespace cimg_library;
+using namespace std;
+
+int tof(double a){
+	return a<127?0:255;
+}
+
+CImg<int> Bi(CImg<double>& M){
+	CImg<int> bina(M);
+	for(int i=0;i<M.width();i++)
+           for(int j=0;j<M.height();j++)
+		bina(i,j)=tof(M(i,j));
+	return bina;
+}
+	
+
+
+CImg<double> Dx(CImg<double> & M)
+{
+	CImg<double> ddx(M);  
+	for(int i=0;i<M.width();i++)
+           for(int j=0;j<M.height()-1;j++)
+		if((M(i+1,j)-M(i,j))>10.0)
+	             ddx(i,j)=M(i+1,j) - M(i,j);
+		else
+		     ddx(i,j)=255;
+
+	return ddx;
+}
+
+
+CImg<double> Dy(CImg<double> & M)
+{
+	CImg<double> ddy(M);  
+	for(int i=0;i<M.width();i++)
+		for(int j=0;j<M.height()-1;j++)
+			if((M(i,j+1)-M(i,j))>10.0)
+		             ddy(i,j)=M(i,j+1) - M(i,j);
+			else
+			     ddy(i,j)=255;
+	return ddy;
+}
+
+
+CImg<double> Gr(CImg<double>& M){
+	CImg<double> grad(M);
+	CImg<double> ddx = Dx(M);
+	CImg<double> ddy = Dy(M);
+	for(int i=0;i<M.width()-1;i++)
+		for(int j=0;j<M.height()-1;j++)
+			grad(i,j)=sqrt(pow(ddx(i,j),2)+(ddy(i,j),2));
+	
+	return grad;
+}
+
+
+void imprimir(CImg<int>& a){
+	ofstream file("fractal_bina.pgm");	
+	file<<"P2"<<endl;
+	file<<"# CREATOR: GIMP PNM Filter Version 1.1"<<endl;
+	file<<a.height()<<" "<<a.width()<<endl;
+	for(int i=0;i<a.width();i++)
+		for(int j=0;j<a.height();j++)
+			file<<a(i,j)<<endl;
+}
+
+
+int main()
+{
+   CImg<double>  A("fractal_little.pgm");
+   CImg<double>  ddx = Dx(A);
+   CImg<double>  ddy = Dy(A);
+   CImg<int>    bina= Bi(A);
+   CImg<double>  grad= Gr(A);
+	imprimir(bina);
+   (A,ddx,ddy,bina,grad).display();
+
+
+   return 1;
+}
+
+
+///Para compilarlo
+//g++ matriz.h main.cpp -lpthread -lX11
+//./a.out

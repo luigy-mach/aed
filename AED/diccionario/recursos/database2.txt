@@ -1,0 +1,26 @@
+a#wada 0
+a#wada 1
+b#wada 0000
+d#wada 000
+c#wada 00
+aardvark#cerdo hormiguero
+aardvark#oso hormiguero[Noun]
+aardvark#cerdo hormiguero
+aardvark#oso hormiguero[Noun]
+aardvarks#cerdos hormigueros
+aardvarks#osos hormigueros 
+ab#prefijo que indica separacio/n
+aback#hacia atras
+aback#hacia atrás,take aback, desconcertar. En facha.
+aback#por sopresa, desprevenidamente, de improviso
+aback#atra/s[Adverb]
+abacterial#abacteriano, sin bacterias
+abacus#a/baco
+abacuses#a/bacos
+abaft#A popa (towards stern)/En popa (in stern)
+abaft#detra/s de[Adverb]
+abalone#abulo/n
+abalone#oreja de mar (molusco)[Noun]
+abalone#oreja de mar[Noun]
+abalones#abulones
+abalones#orejas de mar (moluscos)[Noun]

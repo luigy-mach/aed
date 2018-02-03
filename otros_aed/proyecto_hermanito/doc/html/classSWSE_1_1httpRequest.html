@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Crawler - Similarity Web Search Engine: Referencia de la Clase SWSE::httpRequest</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Crawler - Similarity Web Search Engine
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Buscadorwebporsimilaridaddetextosentrepáginas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;datos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceSWSE.html">SWSE</a></li><li class="navelem"><a class="el" href="classSWSE_1_1httpRequest.html">httpRequest</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="#friends">Amigas</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase SWSE::httpRequest</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="httprequest_8h_source.html">httprequest.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboración para SWSE::httpRequest:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpRequest__coll__graph.png" border="0" usemap="#SWSE_1_1httpRequest_coll__map" alt="Collaboration graph"/></div>
+<map name="SWSE_1_1httpRequest_coll__map" id="SWSE_1_1httpRequest_coll__map">
+<area shape="rect" id="node2" href="classSWSE_1_1URL.html" title="Clase URL." alt="" coords="5,6,160,490"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a0e9e6edacf07cf6aa785c130f286e7c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#a0e9e6edacf07cf6aa785c130f286e7c5">httpRequest</a> ()</td></tr>
+<tr class="memdesc:a0e9e6edacf07cf6aa785c130f286e7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor por default.  <a href="#a0e9e6edacf07cf6aa785c130f286e7c5"></a><br/></td></tr>
+<tr class="memitem:ad3a5c5ea759a90dbb08422888ea663d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#ad3a5c5ea759a90dbb08422888ea663d7">httpRequest</a> (<a class="el" href="classSWSE_1_1URL.html">URL</a> &amp;url)</td></tr>
+<tr class="memdesc:ad3a5c5ea759a90dbb08422888ea663d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ad3a5c5ea759a90dbb08422888ea663d7"></a><br/></td></tr>
+<tr class="memitem:acb11a63a2db862b809fad657ca922b89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#acb11a63a2db862b809fad657ca922b89">setURL</a> (<a class="el" href="classSWSE_1_1URL.html">URL</a> val)</td></tr>
+<tr class="memdesc:acb11a63a2db862b809fad657ca922b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cambia la <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> del request.  <a href="#acb11a63a2db862b809fad657ca922b89"></a><br/></td></tr>
+<tr class="memitem:a318f360b30b05074f5a09e2581b1229c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#a318f360b30b05074f5a09e2581b1229c">WriteSocket</a> (<a class="el" href="namespaceSWSE.html#a1856750e4520fcea86f5cb259cc398ac">socket_t</a> &amp;socket)</td></tr>
+<tr class="memdesc:a318f360b30b05074f5a09e2581b1229c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envia la petición en el socket.  <a href="#a318f360b30b05074f5a09e2581b1229c"></a><br/></td></tr>
+<tr class="memitem:a8ba0da6c1d54768a3b7632dc3efed94e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#a8ba0da6c1d54768a3b7632dc3efed94e">AddHeader</a> (std::string name, std::string val)</td></tr>
+<tr class="memdesc:a8ba0da6c1d54768a3b7632dc3efed94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agrega una cabecera a la peticion.  <a href="#a8ba0da6c1d54768a3b7632dc3efed94e"></a><br/></td></tr>
+<tr class="memitem:a00ebd1cac425fc58f45a8a0948b223c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#a00ebd1cac425fc58f45a8a0948b223c0">init</a> ()</td></tr>
+<tr class="memdesc:a00ebd1cac425fc58f45a8a0948b223c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera los datos minimos para un request http.  <a href="#a00ebd1cac425fc58f45a8a0948b223c0"></a><br/></td></tr>
+<tr class="memitem:af4c639b289a615d450060f7d4238ff54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1URL.html">URL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#af4c639b289a615d450060f7d4238ff54">getURL</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:ae7a73a1911da88891b19341473f4febc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1URL.html">URL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#ae7a73a1911da88891b19341473f4febc">m_url</a></td></tr>
+<tr class="memdesc:ae7a73a1911da88891b19341473f4febc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dirección a la que se hará la solicitud.  <a href="#ae7a73a1911da88891b19341473f4febc"></a><br/></td></tr>
+<tr class="memitem:a8ae6a92ff2a333fd16622128b8be0c12"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#a8ae6a92ff2a333fd16622128b8be0c12">method</a></td></tr>
+<tr class="memitem:ab1a4e33384cea2b0c6a22c0b08d5b4b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSWSE.html#a378931a8f76a56a8e0c93207383d5b4a">mapstrstr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#ab1a4e33384cea2b0c6a22c0b08d5b4b9">attributes</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="friends"></a>
+Amigas</h2></td></tr>
+<tr class="memitem:abee77aece8a0d4f21a12d708bf59d83b"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpRequest.html#abee77aece8a0d4f21a12d708bf59d83b">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classSWSE_1_1httpRequest.html">httpRequest</a> *req)</td></tr>
+</table>
+<h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a0e9e6edacf07cf6aa785c130f286e7c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">httpRequest::httpRequest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor por default. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad3a5c5ea759a90dbb08422888ea663d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">httpRequest::httpRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1URL.html">URL</a> &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td><a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> a la que se hará la petición </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a8ba0da6c1d54768a3b7632dc3efed94e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void httpRequest::AddHeader </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Agrega una cabecera a la peticion. </p>
+<div class="fragment"><div class="line">request.AddHeader(<span class="stringliteral">&quot;If-Modified-Since&quot;</span>,<span class="stringliteral">&quot;Sat, 09 Jul 2000 19:21:28 GMT&quot;</span>);</div>
+</div><!-- fragment --> <dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">val</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpRequest_a8ba0da6c1d54768a3b7632dc3efed94e_icgraph.png" border="0" usemap="#classSWSE_1_1httpRequest_a8ba0da6c1d54768a3b7632dc3efed94e_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpRequest_a8ba0da6c1d54768a3b7632dc3efed94e_icgraph" id="classSWSE_1_1httpRequest_a8ba0da6c1d54768a3b7632dc3efed94e_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390" title="Inicia la ejcución de las descargas." alt="" coords="201,5,367,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af4c639b289a615d450060f7d4238ff54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1URL.html">URL</a>* SWSE::httpRequest::getURL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpRequest_af4c639b289a615d450060f7d4238ff54_icgraph.png" border="0" usemap="#classSWSE_1_1httpRequest_af4c639b289a615d450060f7d4238ff54_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpRequest_af4c639b289a615d450060f7d4238ff54_icgraph" id="classSWSE_1_1httpRequest_af4c639b289a615d450060f7d4238ff54_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64" title="Constructor." alt="" coords="200,5,363,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a00ebd1cac425fc58f45a8a0948b223c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void httpRequest::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Genera los datos minimos para un request http. </p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpRequest_a00ebd1cac425fc58f45a8a0948b223c0_icgraph.png" border="0" usemap="#classSWSE_1_1httpRequest_a00ebd1cac425fc58f45a8a0948b223c0_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpRequest_a00ebd1cac425fc58f45a8a0948b223c0_icgraph" id="classSWSE_1_1httpRequest_a00ebd1cac425fc58f45a8a0948b223c0_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1httpRequest.html#a0e9e6edacf07cf6aa785c130f286e7c5" title="Constructor por default." alt="" coords="223,5,367,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acb11a63a2db862b809fad657ca922b89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::httpRequest::setURL </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1URL.html">URL</a>&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cambia la <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> del request. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>Nueva <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpRequest_acb11a63a2db862b809fad657ca922b89_icgraph.png" border="0" usemap="#classSWSE_1_1httpRequest_acb11a63a2db862b809fad657ca922b89_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpRequest_acb11a63a2db862b809fad657ca922b89_icgraph" id="classSWSE_1_1httpRequest_acb11a63a2db862b809fad657ca922b89_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1URLDownloader.html#a4e730642e0244257b47303543ad360c6" title="Constructor a apatir del string de una URL." alt="" coords="201,5,367,51"/><area shape="rect" id="node5" href="classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390" title="Inicia la ejcución de las descargas." alt="" coords="201,74,367,121"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a318f360b30b05074f5a09e2581b1229c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void httpRequest::WriteSocket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceSWSE.html#a1856750e4520fcea86f5cb259cc398ac">socket_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>socket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envia la petición en el socket. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>Socket conectado al servidor http </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2>Documentación de las funciones relacionadas y clases amigas</h2>
+<a class="anchor" id="abee77aece8a0d4f21a12d708bf59d83b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1httpRequest.html">httpRequest</a> *&#160;</td>
+          <td class="paramname"><em>req</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>Documentación de los campos</h2>
+<a class="anchor" id="ab1a4e33384cea2b0c6a22c0b08d5b4b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceSWSE.html#a378931a8f76a56a8e0c93207383d5b4a">mapstrstr</a> SWSE::httpRequest::attributes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae7a73a1911da88891b19341473f4febc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1URL.html">URL</a> SWSE::httpRequest::m_url</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dirección a la que se hará la solicitud. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8ae6a92ff2a333fd16622128b8be0c12"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SWSE::httpRequest::method</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li><a class="el" href="httprequest_8h_source.html">httprequest.h</a></li>
+<li><a class="el" href="httprequest_8cpp.html">httprequest.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 17 de Diciembre de 2012 13:37:43 para Crawler - Similarity Web Search Engine por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

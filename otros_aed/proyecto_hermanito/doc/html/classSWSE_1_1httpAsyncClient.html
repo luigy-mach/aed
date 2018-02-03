@@ -1,0 +1,647 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Crawler - Similarity Web Search Engine: Referencia de la Clase SWSE::httpAsyncClient</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Crawler - Similarity Web Search Engine
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Buscadorwebporsimilaridaddetextosentrepáginas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;datos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceSWSE.html">SWSE</a></li><li class="navelem"><a class="el" href="classSWSE_1_1httpAsyncClient.html">httpAsyncClient</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase SWSE::httpAsyncClient</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase <a class="el" href="classSWSE_1_1httpAsyncClient.html" title="Clase httpAsyncClient, Cliente http asíncrono.">httpAsyncClient</a>, Cliente http asíncrono.  
+ <a href="classSWSE_1_1httpAsyncClient.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="httpasyncclient_8h_source.html">httpasyncclient.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboración para SWSE::httpAsyncClient:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpAsyncClient__coll__graph.png" border="0" usemap="#SWSE_1_1httpAsyncClient_coll__map" alt="Collaboration graph"/></div>
+<map name="SWSE_1_1httpAsyncClient_coll__map" id="SWSE_1_1httpAsyncClient_coll__map">
+<area shape="rect" id="node2" href="classSWSE_1_1httpResponse.html" title="Clase httpResponse, Contiene los datos de una respuesta de un servidor en el protocolo http..." alt="" coords="5,558,155,799"/><area shape="rect" id="node4" href="classSWSE_1_1httpHeader.html" title="{SWSE::httpHeader\n|&#45; attributes\l|+ httpHeader()\l+ httpHeader()\l+ getAttr()\l+ processHeader()\l}" alt="" coords="13,179,147,317"/><area shape="rect" id="node6" href="classSWSE_1_1httpRequest.html" title="{SWSE::httpRequest\n|&#45; method\l&#45; attributes\l|+ httpRequest()\l+ httpRequest()\l+ setURL()\l+ WriteSocket()\l+ AddHeader()\l+ init()\l+ getURL()\l}" alt="" coords="179,575,320,782"/><area shape="rect" id="node8" href="classSWSE_1_1URL.html" title="Clase URL." alt="" coords="172,6,327,490"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a967090b5de0438c4d1f348b2b5be4e64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64">httpAsyncClient</a> (boost::asio::io_service &amp;io_service, <a class="el" href="classSWSE_1_1httpRequest.html">httpRequest</a> *req)</td></tr>
+<tr class="memdesc:a967090b5de0438c4d1f348b2b5be4e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a967090b5de0438c4d1f348b2b5be4e64"></a><br/></td></tr>
+<tr class="memitem:a1c5ae4c6e6b4485bdff563bad379a19e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1httpResponse.html">httpResponse</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#a1c5ae4c6e6b4485bdff563bad379a19e">getResponse</a> ()</td></tr>
+<tr class="memdesc:a1c5ae4c6e6b4485bdff563bad379a19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el objeto Response que contiene los datos recibidos de el servidor.  <a href="#a1c5ae4c6e6b4485bdff563bad379a19e"></a><br/></td></tr>
+<tr class="memitem:accbbd65dc1c811e1ec00e9f1ee0f9cd3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#accbbd65dc1c811e1ec00e9f1ee0f9cd3">~httpAsyncClient</a> ()</td></tr>
+<tr class="memdesc:accbbd65dc1c811e1ec00e9f1ee0f9cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#accbbd65dc1c811e1ec00e9f1ee0f9cd3"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:a6d826d788141ff5b5211d1c537cc884d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#a6d826d788141ff5b5211d1c537cc884d">handle_resolve</a> (const boost::system::error_code &amp;err, tcp::resolver::iterator endpoint_iterator)</td></tr>
+<tr class="memdesc:a6d826d788141ff5b5211d1c537cc884d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza la conexión con el servidor.  <a href="#a6d826d788141ff5b5211d1c537cc884d"></a><br/></td></tr>
+<tr class="memitem:a6365ca680a86e211dabad0a3779d7eea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#a6365ca680a86e211dabad0a3779d7eea">handle_connect</a> (const boost::system::error_code &amp;err)</td></tr>
+<tr class="memdesc:a6365ca680a86e211dabad0a3779d7eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envía el request al servidor.  <a href="#a6365ca680a86e211dabad0a3779d7eea"></a><br/></td></tr>
+<tr class="memitem:aeb071119814882af9b690c76751fb78a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#aeb071119814882af9b690c76751fb78a">handle_write_request</a> (const boost::system::error_code &amp;err)</td></tr>
+<tr class="memdesc:aeb071119814882af9b690c76751fb78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee la linea de estado recibidos por el servidor.  <a href="#aeb071119814882af9b690c76751fb78a"></a><br/></td></tr>
+<tr class="memitem:a021cdea01aecd2f7fcae583bcfd8d003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#a021cdea01aecd2f7fcae583bcfd8d003">handle_read_status_line</a> (const boost::system::error_code &amp;err)</td></tr>
+<tr class="memdesc:a021cdea01aecd2f7fcae583bcfd8d003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee la cabezera http recibida de el servidor.  <a href="#a021cdea01aecd2f7fcae583bcfd8d003"></a><br/></td></tr>
+<tr class="memitem:ae592e0a8d2fc70790969ce16397867f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#ae592e0a8d2fc70790969ce16397867f1">handle_read_headers</a> (const boost::system::error_code &amp;err)</td></tr>
+<tr class="memdesc:ae592e0a8d2fc70790969ce16397867f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia la lectura de el contenido.  <a href="#ae592e0a8d2fc70790969ce16397867f1"></a><br/></td></tr>
+<tr class="memitem:af3dab2bb49add919a2c116d828426239"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#af3dab2bb49add919a2c116d828426239">handle_read_content</a> (const boost::system::error_code &amp;err, size_t tam)</td></tr>
+<tr class="memdesc:af3dab2bb49add919a2c116d828426239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee el contenido del cuerpo del request.  <a href="#af3dab2bb49add919a2c116d828426239"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a85ca7c838f62c3bc5db42a1649d3e266"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSWSE.html#a4f7043c76a7753199eed11014b346695">resolver_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#a85ca7c838f62c3bc5db42a1649d3e266">resolver_</a></td></tr>
+<tr class="memdesc:a85ca7c838f62c3bc5db42a1649d3e266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolvedor de las direcciones web.  <a href="#a85ca7c838f62c3bc5db42a1649d3e266"></a><br/></td></tr>
+<tr class="memitem:a07fafefe9479887730642598280f11fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSWSE.html#a1856750e4520fcea86f5cb259cc398ac">socket_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#a07fafefe9479887730642598280f11fd">socket_</a></td></tr>
+<tr class="memdesc:a07fafefe9479887730642598280f11fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket de coneccion.  <a href="#a07fafefe9479887730642598280f11fd"></a><br/></td></tr>
+<tr class="memitem:a33add37a4bafdf4f37a065eb96a5933e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1httpRequest.html">httpRequest</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#a33add37a4bafdf4f37a065eb96a5933e">ptr_request</a></td></tr>
+<tr class="memdesc:a33add37a4bafdf4f37a065eb96a5933e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request enviado al servidor.  <a href="#a33add37a4bafdf4f37a065eb96a5933e"></a><br/></td></tr>
+<tr class="memitem:a4301f0bf0748509273e0e459becba242"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1httpResponse.html">httpResponse</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#a4301f0bf0748509273e0e459becba242">ptr_response</a></td></tr>
+<tr class="memdesc:a4301f0bf0748509273e0e459becba242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respuesta recibida de el servidor.  <a href="#a4301f0bf0748509273e0e459becba242"></a><br/></td></tr>
+<tr class="memitem:aa8c56f3f7eb7438106cf6956a72f4076"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSWSE.html#a8c6120c778ff7834c72a6dfdbb42242d">streambuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1httpAsyncClient.html#aa8c56f3f7eb7438106cf6956a72f4076">response_</a></td></tr>
+<tr class="memdesc:aa8c56f3f7eb7438106cf6956a72f4076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer de lectura de datos.  <a href="#aa8c56f3f7eb7438106cf6956a72f4076"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase <a class="el" href="classSWSE_1_1httpAsyncClient.html" title="Clase httpAsyncClient, Cliente http asíncrono.">httpAsyncClient</a>, Cliente http asíncrono. </p>
+<p>Realiza el procedimiento de conexión al servidor http y reception de los datos solicitados. </p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a967090b5de0438c4d1f348b2b5be4e64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SWSE::httpAsyncClient::httpAsyncClient </td>
+          <td>(</td>
+          <td class="paramtype">boost::asio::io_service &amp;&#160;</td>
+          <td class="paramname"><em>io_service</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1httpRequest.html">httpRequest</a> *&#160;</td>
+          <td class="paramname"><em>req</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>Inicializa el socket y el resolvedor de direcciones con un io_service, y recibe el request que se enviara al servidor http, ademas inicia las operaciones asincronas resolviedo la dirección de el host proveido por el request. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">io_service</td><td>para realizar operaciones asincronas. </td></tr>
+    <tr><td class="paramname">req</td><td>Request a ser enviado al servidor http, que ademas contiene a <a class="el" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> que se va ha descargar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="accbbd65dc1c811e1ec00e9f1ee0f9cd3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SWSE::httpAsyncClient::~httpAsyncClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a1c5ae4c6e6b4485bdff563bad379a19e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1httpResponse.html">httpResponse</a>* SWSE::httpAsyncClient::getResponse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene el objeto Response que contiene los datos recibidos de el servidor. </p>
+<dl class="section return"><dt>Devuelve</dt><dd><a class="el" href="classSWSE_1_1httpResponse.html" title="Clase httpResponse, Contiene los datos de una respuesta de un servidor en el protocolo http...">httpResponse</a> Objeto con datos recibidos de el servidor. </dd></dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpAsyncClient_a1c5ae4c6e6b4485bdff563bad379a19e_icgraph.png" border="0" usemap="#classSWSE_1_1httpAsyncClient_a1c5ae4c6e6b4485bdff563bad379a19e_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpAsyncClient_a1c5ae4c6e6b4485bdff563bad379a19e_icgraph" id="classSWSE_1_1httpAsyncClient_a1c5ae4c6e6b4485bdff563bad379a19e_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390" title="Inicia la ejcución de las descargas." alt="" coords="217,5,383,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6365ca680a86e211dabad0a3779d7eea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::httpAsyncClient::handle_connect </td>
+          <td>(</td>
+          <td class="paramtype">const boost::system::error_code &amp;&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Envía el request al servidor. </p>
+<p>Manejador de los errores originados en la conexión, escribe el request en el socket. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>Código de error devuelto por el procedimiento conexión. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpAsyncClient_a6365ca680a86e211dabad0a3779d7eea_icgraph.png" border="0" usemap="#classSWSE_1_1httpAsyncClient_a6365ca680a86e211dabad0a3779d7eea_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpAsyncClient_a6365ca680a86e211dabad0a3779d7eea_icgraph" id="classSWSE_1_1httpAsyncClient_a6365ca680a86e211dabad0a3779d7eea_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1httpAsyncClient.html#a6d826d788141ff5b5211d1c537cc884d" title="Realiza la conexión con el servidor." alt="" coords="216,5,379,51"/><area shape="rect" id="node5" href="classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64" title="Constructor." alt="" coords="427,5,589,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af3dab2bb49add919a2c116d828426239"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::httpAsyncClient::handle_read_content </td>
+          <td>(</td>
+          <td class="paramtype">const boost::system::error_code &amp;&#160;</td>
+          <td class="paramname"><em>err</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lee el contenido del cuerpo del request. </p>
+<p>*Lee iterativamente los datos del contenido, Maneja los errores originados por la lectura anterior. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>Código de error devuelto por el procedimiento de lectura de contenido anterior. </td></tr>
+    <tr><td class="paramname">tam</td><td>Tamaño de la lectura anterior. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpAsyncClient_af3dab2bb49add919a2c116d828426239_icgraph.png" border="0" usemap="#classSWSE_1_1httpAsyncClient_af3dab2bb49add919a2c116d828426239_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpAsyncClient_af3dab2bb49add919a2c116d828426239_icgraph" id="classSWSE_1_1httpAsyncClient_af3dab2bb49add919a2c116d828426239_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1httpAsyncClient.html#ae592e0a8d2fc70790969ce16397867f1" title="Inicia la lectura de el contenido." alt="" coords="216,5,379,51"/><area shape="rect" id="node5" href="classSWSE_1_1httpAsyncClient.html#a021cdea01aecd2f7fcae583bcfd8d003" title="Lee la cabezera http recibida de el servidor." alt="" coords="427,5,597,51"/><area shape="rect" id="node7" href="classSWSE_1_1httpAsyncClient.html#aeb071119814882af9b690c76751fb78a" title="Lee la linea de estado recibidos por el servidor." alt="" coords="645,5,808,51"/><area shape="rect" id="node9" href="classSWSE_1_1httpAsyncClient.html#a6365ca680a86e211dabad0a3779d7eea" title="Envía el request al servidor." alt="" coords="856,5,1019,51"/><area shape="rect" id="node11" href="classSWSE_1_1httpAsyncClient.html#a6d826d788141ff5b5211d1c537cc884d" title="Realiza la conexión con el servidor." alt="" coords="1067,5,1229,51"/><area shape="rect" id="node13" href="classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64" title="Constructor." alt="" coords="1277,5,1440,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae592e0a8d2fc70790969ce16397867f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::httpAsyncClient::handle_read_headers </td>
+          <td>(</td>
+          <td class="paramtype">const boost::system::error_code &amp;&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inicia la lectura de el contenido. </p>
+<p>*Manejador de los errores originados en la lectura de la cabezera. Inicia la lectura de el cuerpo del *response. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>Código de error devuelto por el procedimiento de lectura de la cabecera. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpAsyncClient_ae592e0a8d2fc70790969ce16397867f1_icgraph.png" border="0" usemap="#classSWSE_1_1httpAsyncClient_ae592e0a8d2fc70790969ce16397867f1_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpAsyncClient_ae592e0a8d2fc70790969ce16397867f1_icgraph" id="classSWSE_1_1httpAsyncClient_ae592e0a8d2fc70790969ce16397867f1_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1httpAsyncClient.html#a021cdea01aecd2f7fcae583bcfd8d003" title="Lee la cabezera http recibida de el servidor." alt="" coords="216,5,387,51"/><area shape="rect" id="node5" href="classSWSE_1_1httpAsyncClient.html#aeb071119814882af9b690c76751fb78a" title="Lee la linea de estado recibidos por el servidor." alt="" coords="435,5,597,51"/><area shape="rect" id="node7" href="classSWSE_1_1httpAsyncClient.html#a6365ca680a86e211dabad0a3779d7eea" title="Envía el request al servidor." alt="" coords="645,5,808,51"/><area shape="rect" id="node9" href="classSWSE_1_1httpAsyncClient.html#a6d826d788141ff5b5211d1c537cc884d" title="Realiza la conexión con el servidor." alt="" coords="856,5,1019,51"/><area shape="rect" id="node11" href="classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64" title="Constructor." alt="" coords="1067,5,1229,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a021cdea01aecd2f7fcae583bcfd8d003"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::httpAsyncClient::handle_read_status_line </td>
+          <td>(</td>
+          <td class="paramtype">const boost::system::error_code &amp;&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lee la cabezera http recibida de el servidor. </p>
+<p>Manejador de los errores originados en la lectura del código de estado. Lee la cabezera HTTP enviada como parte de el response del servidor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>Código de error devuelto por el procedimiento de lectura del código de estado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpAsyncClient_a021cdea01aecd2f7fcae583bcfd8d003_icgraph.png" border="0" usemap="#classSWSE_1_1httpAsyncClient_a021cdea01aecd2f7fcae583bcfd8d003_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpAsyncClient_a021cdea01aecd2f7fcae583bcfd8d003_icgraph" id="classSWSE_1_1httpAsyncClient_a021cdea01aecd2f7fcae583bcfd8d003_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1httpAsyncClient.html#aeb071119814882af9b690c76751fb78a" title="Lee la linea de estado recibidos por el servidor." alt="" coords="224,5,387,51"/><area shape="rect" id="node5" href="classSWSE_1_1httpAsyncClient.html#a6365ca680a86e211dabad0a3779d7eea" title="Envía el request al servidor." alt="" coords="435,5,597,51"/><area shape="rect" id="node7" href="classSWSE_1_1httpAsyncClient.html#a6d826d788141ff5b5211d1c537cc884d" title="Realiza la conexión con el servidor." alt="" coords="645,5,808,51"/><area shape="rect" id="node9" href="classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64" title="Constructor." alt="" coords="856,5,1019,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d826d788141ff5b5211d1c537cc884d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::httpAsyncClient::handle_resolve </td>
+          <td>(</td>
+          <td class="paramtype">const boost::system::error_code &amp;&#160;</td>
+          <td class="paramname"><em>err</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tcp::resolver::iterator&#160;</td>
+          <td class="paramname"><em>endpoint_iterator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Realiza la conexión con el servidor. </p>
+<p>Manejador de los errores origindos en la resolución la dirección, conecta el socket al resolver iterator. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>Código de error devuelto por el procedimiento de resolución. </td></tr>
+    <tr><td class="paramname">endpoint_iterator</td><td>Iterador de direciones válidas encontradas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpAsyncClient_a6d826d788141ff5b5211d1c537cc884d_icgraph.png" border="0" usemap="#classSWSE_1_1httpAsyncClient_a6d826d788141ff5b5211d1c537cc884d_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpAsyncClient_a6d826d788141ff5b5211d1c537cc884d_icgraph" id="classSWSE_1_1httpAsyncClient_a6d826d788141ff5b5211d1c537cc884d_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64" title="Constructor." alt="" coords="216,5,379,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb071119814882af9b690c76751fb78a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::httpAsyncClient::handle_write_request </td>
+          <td>(</td>
+          <td class="paramtype">const boost::system::error_code &amp;&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lee la linea de estado recibidos por el servidor. </p>
+<p>Manejador de los errores originados en el envío del request. Lee los datos de estado iniciales de la respuesta de el servidor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>Código de error devuelto por el procedimiento de envío del request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1httpAsyncClient_aeb071119814882af9b690c76751fb78a_icgraph.png" border="0" usemap="#classSWSE_1_1httpAsyncClient_aeb071119814882af9b690c76751fb78a_icgraph" alt=""/></div>
+<map name="classSWSE_1_1httpAsyncClient_aeb071119814882af9b690c76751fb78a_icgraph" id="classSWSE_1_1httpAsyncClient_aeb071119814882af9b690c76751fb78a_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1httpAsyncClient.html#a6365ca680a86e211dabad0a3779d7eea" title="Envía el request al servidor." alt="" coords="216,5,379,51"/><area shape="rect" id="node5" href="classSWSE_1_1httpAsyncClient.html#a6d826d788141ff5b5211d1c537cc884d" title="Realiza la conexión con el servidor." alt="" coords="427,5,589,51"/><area shape="rect" id="node7" href="classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64" title="Constructor." alt="" coords="637,5,800,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2>Documentación de los campos</h2>
+<a class="anchor" id="a33add37a4bafdf4f37a065eb96a5933e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1httpRequest.html">httpRequest</a>* SWSE::httpAsyncClient::ptr_request</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Request enviado al servidor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4301f0bf0748509273e0e459becba242"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1httpResponse.html">httpResponse</a>* SWSE::httpAsyncClient::ptr_response</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Respuesta recibida de el servidor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a85ca7c838f62c3bc5db42a1649d3e266"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceSWSE.html#a4f7043c76a7753199eed11014b346695">resolver_t</a> SWSE::httpAsyncClient::resolver_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resolvedor de las direcciones web. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa8c56f3f7eb7438106cf6956a72f4076"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceSWSE.html#a8c6120c778ff7834c72a6dfdbb42242d">streambuffer</a> SWSE::httpAsyncClient::response_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Buffer de lectura de datos. </p>
+
+</div>
+</div>
+<a class="anchor" id="a07fafefe9479887730642598280f11fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceSWSE.html#a1856750e4520fcea86f5cb259cc398ac">socket_t</a> SWSE::httpAsyncClient::socket_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Socket de coneccion. </p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li><a class="el" href="httpasyncclient_8h_source.html">httpasyncclient.h</a></li>
+<li><a class="el" href="httpasyncclient_8cpp.html">httpasyncclient.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 17 de Diciembre de 2012 13:37:43 para Crawler - Similarity Web Search Engine por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

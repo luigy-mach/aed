@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Crawler - Similarity Web Search Engine: Referencia de la Clase SWSE::CrawledDataProcessor</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Crawler - Similarity Web Search Engine
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Buscadorwebporsimilaridaddetextosentrepáginas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;datos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceSWSE.html">SWSE</a></li><li class="navelem"><a class="el" href="classSWSE_1_1CrawledDataProcessor.html">CrawledDataProcessor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-static-attribs">Atributos públicos estáticos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase SWSE::CrawledDataProcessor</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase <a class="el" href="classSWSE_1_1CrawledDataProcessor.html" title="Clase CrawledDataProcessor que procesa la data de la.">CrawledDataProcessor</a> que procesa la data de la.  
+ <a href="classSWSE_1_1CrawledDataProcessor.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="crawleddataprocessor_8h_source.html">crawleddataprocessor.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboración para SWSE::CrawledDataProcessor:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1CrawledDataProcessor__coll__graph.png" border="0" usemap="#SWSE_1_1CrawledDataProcessor_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ac32fa5134ab93fc3b0ed2735df897b7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1CrawledDataProcessor.html#ac32fa5134ab93fc3b0ed2735df897b7b">CrawledDataProcessor</a> (std::string fileName)</td></tr>
+<tr class="memdesc:ac32fa5134ab93fc3b0ed2735df897b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ac32fa5134ab93fc3b0ed2735df897b7b"></a><br/></td></tr>
+<tr class="memitem:a7b47fc4ba3d5432f9f79d221ba761a6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1CrawledDataProcessor.html#a7b47fc4ba3d5432f9f79d221ba761a6e">save</a> (<a class="el" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a> &amp;&amp;d)</td></tr>
+<tr class="memdesc:a7b47fc4ba3d5432f9f79d221ba761a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agrega datos para la escritura.  <a href="#a7b47fc4ba3d5432f9f79d221ba761a6e"></a><br/></td></tr>
+<tr class="memitem:a2ecc2538ab47ee258fc8964144b67ee9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1CrawledDataProcessor.html#a2ecc2538ab47ee258fc8964144b67ee9">~CrawledDataProcessor</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-attribs"></a>
+Atributos públicos estáticos</h2></td></tr>
+<tr class="memitem:a0b1c90a0d88310f12e68b64174c04817"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1CrawledDataProcessor.html#a0b1c90a0d88310f12e68b64174c04817">MinWriteSize</a> = 1024</td></tr>
+<tr class="memdesc:a0b1c90a0d88310f12e68b64174c04817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tamaño minimo de el buffer para la escritura.  <a href="#a0b1c90a0d88310f12e68b64174c04817"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a5442b79ad85cedac71b7080cdf52e40f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1CrawledDataProcessor.html#a5442b79ad85cedac71b7080cdf52e40f">m_data</a></td></tr>
+<tr class="memdesc:a5442b79ad85cedac71b7080cdf52e40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">buffer  <a href="#a5442b79ad85cedac71b7080cdf52e40f"></a><br/></td></tr>
+<tr class="memitem:ace95523026b7d1c1bde5bda6b091d921"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1CrawledDataProcessor.html#ace95523026b7d1c1bde5bda6b091d921">oFile</a></td></tr>
+<tr class="memdesc:ace95523026b7d1c1bde5bda6b091d921"><td class="mdescLeft">&#160;</td><td class="mdescRight">archivo de salida.  <a href="#ace95523026b7d1c1bde5bda6b091d921"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase <a class="el" href="classSWSE_1_1CrawledDataProcessor.html" title="Clase CrawledDataProcessor que procesa la data de la.">CrawledDataProcessor</a> que procesa la data de la. </p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="ac32fa5134ab93fc3b0ed2735df897b7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SWSE::CrawledDataProcessor::CrawledDataProcessor </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>Nombre de el archivo donde se van a guardar los datos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2ecc2538ab47ee258fc8964144b67ee9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SWSE::CrawledDataProcessor::~CrawledDataProcessor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a7b47fc4ba3d5432f9f79d221ba761a6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::CrawledDataProcessor::save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Agrega datos para la escritura. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>Datos para ser guardados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1CrawledDataProcessor_a7b47fc4ba3d5432f9f79d221ba761a6e_icgraph.png" border="0" usemap="#classSWSE_1_1CrawledDataProcessor_a7b47fc4ba3d5432f9f79d221ba761a6e_icgraph" alt=""/></div>
+<map name="classSWSE_1_1CrawledDataProcessor_a7b47fc4ba3d5432f9f79d221ba761a6e_icgraph" id="classSWSE_1_1CrawledDataProcessor_a7b47fc4ba3d5432f9f79d221ba761a6e_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1Parser.html#a3d1bf01ea4965938d68db4c555bf304a" title="SWSE::Parser::saveData" alt="" coords="260,13,431,43"/><area shape="rect" id="node5" href="classSWSE_1_1Parser.html#af4fd4f86f306ffb7f9bf3c3719d1dae9" title="SWSE::Parser::run" alt="" coords="481,13,615,43"/><area shape="rect" id="node7" href="classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390" title="Inicia la ejcución de las descargas." alt="" coords="665,5,831,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2>Documentación de los campos</h2>
+<a class="anchor" id="a5442b79ad85cedac71b7080cdf52e40f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a> SWSE::CrawledDataProcessor::m_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>buffer </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b1c90a0d88310f12e68b64174c04817"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t SWSE::CrawledDataProcessor::MinWriteSize = 1024</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tamaño minimo de el buffer para la escritura. </p>
+
+</div>
+</div>
+<a class="anchor" id="ace95523026b7d1c1bde5bda6b091d921"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream SWSE::CrawledDataProcessor::oFile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>archivo de salida. </p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li><a class="el" href="crawleddataprocessor_8h_source.html">crawleddataprocessor.h</a></li>
+<li><a class="el" href="crawleddataprocessor_8cpp.html">crawleddataprocessor.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 17 de Diciembre de 2012 13:37:43 para Crawler - Similarity Web Search Engine por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

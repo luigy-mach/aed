@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1414687252 source:/home/olenka/Desktop/BinomialH/main.cpp
+	<iostream>
+	"binomialH.h"
+
+1414690505 /home/olenka/Desktop/BinomialH/binomialH.h
+	<vector>
+	<iostream>
+	"nodo.h"
+	<algorithm>
+	<cstdio>
+	<string>
+
+1414687333 /home/olenka/Desktop/BinomialH/nodo.h
+	<vector>
+
+1414692232 source:/home/csunsa02/Desktop/BinomialH/main.cpp
+	<iostream>
+	"binomialH.h"
+
+1415034907 /home/csunsa02/Desktop/BinomialH/binomialH.h
+	<vector>
+	<iostream>
+	"nodo.h"
+	<algorithm>
+	<cstdio>
+	<string>
+
+1414692248 /home/csunsa02/Desktop/BinomialH/nodo.h
+	<vector>
+
+1415094138 source:/home/luigy/Escritorio/luigy_aed_2014/borrar/BinomialH/main.cpp
+	<iostream>
+	"binomialH.h"
+
+1415105359 /home/luigy/Escritorio/luigy_aed_2014/borrar/BinomialH/binomialH.h
+	<vector>
+	<iostream>
+	"nodo.h"
+	<algorithm>
+	<cstdio>
+	<string>
+
+1415105332 /home/luigy/Escritorio/luigy_aed_2014/borrar/BinomialH/nodo.h
+	<vector>
+

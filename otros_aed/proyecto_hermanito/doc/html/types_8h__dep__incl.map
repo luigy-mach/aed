@@ -1,0 +1,24 @@
+<map id="types.h" name="types.h">
+<area shape="rect" id="node3" href="$crawleddataprocessor_8h.html" title="Contiene la definición la clase CrawledDataProcessor." alt="" coords="619,83,779,112"/>
+<area shape="rect" id="node7" href="$parser_8h.html" title="parser.h" alt="" coords="547,160,616,189"/>
+<area shape="rect" id="node9" href="$urldownloader_8h.html" title="urldownloader.h" alt="" coords="489,237,601,267"/>
+<area shape="rect" id="node17" href="$urlregister_8h.html" title="urlregister.h" alt="" coords="125,83,216,112"/>
+<area shape="rect" id="node19" href="$crawler_8h.html" title="Contiene la definición de la clase Crawler." alt="" coords="133,160,208,189"/>
+<area shape="rect" id="node29" href="$httpheader_8h.html" title="httpheader.h" alt="" coords="839,83,932,112"/>
+<area shape="rect" id="node32" href="$httpresponse_8h.html" title="httpresponse.h" alt="" coords="1019,160,1125,189"/>
+<area shape="rect" id="node34" href="$httpasyncclient_8h.html" title="httpasyncclient.h" alt="" coords="1059,237,1179,267"/>
+<area shape="rect" id="node43" href="$urlresolverclient_8h.html" title="urlresolverclient.h" alt="" coords="349,83,472,112"/>
+<area shape="rect" id="node50" href="$URL_8h.html" title="URL.h" alt="" coords="1255,83,1313,112"/>
+<area shape="rect" id="node5" href="$crawleddataprocessor_8cpp.html" title="crawleddataprocessor.cpp" alt="" coords="640,160,813,189"/>
+<area shape="rect" id="node15" href="$parser_8cpp.html" title="parser.cpp" alt="" coords="831,237,913,267"/>
+<area shape="rect" id="node11" href="$crawler_8cpp.html" title="crawler.cpp" alt="" coords="375,315,463,344"/>
+<area shape="rect" id="node13" href="$urldownloader_8cpp.html" title="urldownloader.cpp" alt="" coords="608,315,733,344"/>
+<area shape="rect" id="node26" href="$urlregister_8cpp.html" title="urlregister.cpp" alt="" coords="5,160,109,189"/>
+<area shape="rect" id="node23" href="$main_8cpp.html" title="main.cpp" alt="" coords="208,237,283,267"/>
+<area shape="rect" id="node40" href="$httpheader_8cpp.html" title="httpheader.cpp" alt="" coords="888,160,995,189"/>
+<area shape="rect" id="node36" href="$httpasyncclient_8cpp.html" title="httpasyncclient.cpp" alt="" coords="1192,315,1325,344"/>
+<area shape="rect" id="node48" href="$urlresolverclient_8cpp.html" title="urlresolverclient.cpp" alt="" coords="283,160,421,189"/>
+<area shape="rect" id="node52" href="$httprequest_8h.html" title="httprequest.h" alt="" coords="1349,160,1448,189"/>
+<area shape="rect" id="node59" href="$URL_8cpp.html" title="URL.cpp" alt="" coords="1251,160,1325,189"/>
+<area shape="rect" id="node56" href="$httprequest_8cpp.html" title="httprequest.cpp" alt="" coords="1249,237,1361,267"/>
+</map>

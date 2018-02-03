@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Crawler - Similarity Web Search Engine: Fichero Fuente URL.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Crawler - Similarity Web Search Engine
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Buscadorwebporsimilaridaddetextosentrepáginas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">URL.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="URL_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef URL_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define URL_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html" title="Contiene las definiciones de los tipos que usados.">types.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>SWSE</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="namespaceSWSE.html#a68135217a8edadb919a9d54a8a034a76">    8</a></span>&#160;<span class="keyword">typedef</span> std::string <a class="code" href="namespaceSWSE.html#a68135217a8edadb919a9d54a8a034a76">whatMsj_t</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="classSWSE_1_1URLexception.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSWSE_1_1URLexception.html">URLexception</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="classSWSE_1_1URLexception.html#a3fea74a9e4394a016296af51e1c9ef43">   13</a></span>&#160;    <a class="code" href="classSWSE_1_1URLexception.html#a3fea74a9e4394a016296af51e1c9ef43">URLexception</a>(<a class="code" href="namespaceSWSE.html#a68135217a8edadb919a9d54a8a034a76">whatMsj_t</a> <a class="code" href="classSWSE_1_1URLexception.html#ad5044b4f8b1a0b0dd5d1bcc74c93b589">what</a>)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        :<a class="code" href="classSWSE_1_1URLexception.html#ac061221cbcac9fa1e71329a45bcb2dea">what_</a>(what)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {}</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="classSWSE_1_1URLexception.html#ad5044b4f8b1a0b0dd5d1bcc74c93b589">   16</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespaceSWSE.html#a68135217a8edadb919a9d54a8a034a76">whatMsj_t</a> <a class="code" href="classSWSE_1_1URLexception.html#ad5044b4f8b1a0b0dd5d1bcc74c93b589">what</a>()</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;URL: &quot;</span>+<a class="code" href="classSWSE_1_1URLexception.html#ac061221cbcac9fa1e71329a45bcb2dea">what_</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="classSWSE_1_1URLexception.html#ac9323c9b2862230570aba7e70e519cfc">   20</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classSWSE_1_1URLexception.html#ac9323c9b2862230570aba7e70e519cfc">~URLexception</a>() {}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="classSWSE_1_1URLexception.html#ac061221cbcac9fa1e71329a45bcb2dea">   22</a></span>&#160;    <a class="code" href="namespaceSWSE.html#a68135217a8edadb919a9d54a8a034a76">whatMsj_t</a> <a class="code" href="classSWSE_1_1URLexception.html#ac061221cbcac9fa1e71329a45bcb2dea">what_</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="classSWSE_1_1InvalidProtocol.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSWSE_1_1InvalidProtocol.html">InvalidProtocol</a>: <span class="keyword">public</span> <a class="code" href="classSWSE_1_1URLexception.html">URLexception</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="classSWSE_1_1InvalidProtocol.html#a1e40bd579f417d3559e73024b1891f95">   28</a></span>&#160;    <a class="code" href="classSWSE_1_1InvalidProtocol.html#a1e40bd579f417d3559e73024b1891f95">InvalidProtocol</a>(<a class="code" href="namespaceSWSE.html#a68135217a8edadb919a9d54a8a034a76">whatMsj_t</a> <a class="code" href="classSWSE_1_1URLexception.html#ad5044b4f8b1a0b0dd5d1bcc74c93b589">what</a>)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        :<a class="code" href="classSWSE_1_1URLexception.html">URLexception</a>(what)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="classSWSE_1_1InvalidURL.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSWSE_1_1InvalidURL.html">InvalidURL</a>: <span class="keyword">public</span> <a class="code" href="classSWSE_1_1URLexception.html">URLexception</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="classSWSE_1_1InvalidURL.html#ae5fc9fa3b39ae824212fc4f00c5ec049">   35</a></span>&#160;    <a class="code" href="classSWSE_1_1InvalidURL.html#ae5fc9fa3b39ae824212fc4f00c5ec049">InvalidURL</a>(<a class="code" href="namespaceSWSE.html#a68135217a8edadb919a9d54a8a034a76">whatMsj_t</a> <a class="code" href="classSWSE_1_1URLexception.html#ad5044b4f8b1a0b0dd5d1bcc74c93b589">what</a>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        :<a class="code" href="classSWSE_1_1URLexception.html">URLexception</a>(what)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#adcdb708f7abb62d38dbb65b3178d3aab">   50</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1URL.html#adcdb708f7abb62d38dbb65b3178d3aab" title="Protocolo de la URL.">protocol</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#ad7f9da3908b5e13fe245c4e8308e6800">   52</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1URL.html#ad7f9da3908b5e13fe245c4e8308e6800" title="Servidor o dominio.">host</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#aa48da00b17b98fc294a859b6492f1867">   54</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1URL.html#aa48da00b17b98fc294a859b6492f1867" title="Archivo alojado en el host.">path</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#aa8e145b94fb808151c3ae530e93ac651">   56</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1URL.html#aa8e145b94fb808151c3ae530e93ac651" title="url completa.">dir_base</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#a8cda0953a9518e61abf59b57c7ee6dae">   57</a></span>&#160;    <a class="code" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f" title="Tipo de dato para el string de una URL.">URLstr_t</a> <a class="code" href="classSWSE_1_1URL.html#a8cda0953a9518e61abf59b57c7ee6dae">m_url</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#a6790af2166696c5e8d4a8f1b46d24026">   58</a></span>&#160;    <a class="code" href="namespaceSWSE.html#a4f23ae4a5eb21c9e41f9130da56fcf6d" title="URI manager.">Net_uri</a>* <a class="code" href="classSWSE_1_1URL.html#a6790af2166696c5e8d4a8f1b46d24026">ptr_uri</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> std::set&lt;URLstr_t&gt;* <a class="code" href="classSWSE_1_1URL.html#ae1fadc4d1acf0291e1831908dc0c88c6">makeSet</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#ad51f0b7191d2f732a53c4713d04843f8">   62</a></span>&#160;    <span class="keyword">static</span> std::set&lt;URLstr_t&gt;* <a class="code" href="classSWSE_1_1URL.html#ad51f0b7191d2f732a53c4713d04843f8">URLprotocols</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classSWSE_1_1URL.html#affd416d44202db473bbbb60039a51f9a">AddURLprotocols</a>(<a class="code" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f" title="Tipo de dato para el string de una URL.">URLstr_t</a> prot);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classSWSE_1_1URL.html#aaca91ee4a5f327f6b29749857d216beb">isValidURLscheme</a>(<a class="code" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f" title="Tipo de dato para el string de una URL.">URLstr_t</a> val);</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#a337219715e162c539875ad30725b5f0a">   66</a></span>&#160;    <a class="code" href="classSWSE_1_1URL.html#a337219715e162c539875ad30725b5f0a" title="Constructor por default.">URL</a>() {}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classSWSE_1_1URL.html#a337219715e162c539875ad30725b5f0a" title="Constructor por default.">URL</a>(<a class="code" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f" title="Tipo de dato para el string de una URL.">URLstr_t</a> &amp; url);</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#a59e352b95b83842ccf0121263525fcc3">   78</a></span>&#160;    <a class="code" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f" title="Tipo de dato para el string de una URL.">URLstr_t</a> <a class="code" href="classSWSE_1_1URL.html#a59e352b95b83842ccf0121263525fcc3" title="Descompone la url.">string</a>()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1URL.html#a8cda0953a9518e61abf59b57c7ee6dae">m_url</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSWSE_1_1URL.html#a8d41480128e4bead6e357c1ebd290f05">processURL</a>(<a class="code" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f" title="Tipo de dato para el string de una URL.">URLstr_t</a> &amp; url);</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#a418157d374f4c149170c0f23ba9a25c6">   87</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1URL.html#a418157d374f4c149170c0f23ba9a25c6" title="Obtiene el protocolo de la URL.">getProtocol</a>()</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1URL.html#adcdb708f7abb62d38dbb65b3178d3aab" title="Protocolo de la URL.">protocol</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#ac9d8c4f109bfe08118ddc3cded90e946">   95</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1URL.html#ac9d8c4f109bfe08118ddc3cded90e946" title="Obtiene el host de la URL.">getHost</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1URL.html#ad7f9da3908b5e13fe245c4e8308e6800" title="Servidor o dominio.">host</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#a1530d4b856ae1d1c26eec2a1c926b235">  103</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1URL.html#a1530d4b856ae1d1c26eec2a1c926b235" title="Obtiene el archivo o path de la URL.">getPath</a>()</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1URL.html#aa48da00b17b98fc294a859b6492f1867" title="Archivo alojado en el host.">path</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#a7f3d03ffb0049f92a560308a4258ef92">  108</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1URL.html#a7f3d03ffb0049f92a560308a4258ef92">getQuery</a>()</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1URL.html#a6790af2166696c5e8d4a8f1b46d24026">ptr_uri</a>-&gt;query();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#a023c309afe4bca72bbf827d4d090adb7">  113</a></span>&#160;    std::string <a class="code" href="classSWSE_1_1URL.html#a023c309afe4bca72bbf827d4d090adb7">getPathBase</a>()</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSWSE_1_1URL.html#aa8e145b94fb808151c3ae530e93ac651" title="url completa.">dir_base</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#afae04d78c9be8228d417bdf0679e7119">  122</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSWSE_1_1URL.html#afae04d78c9be8228d417bdf0679e7119" title="Cambia el protocolo de la url.">setProtocol</a>(std::string val)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="classSWSE_1_1URL.html#adcdb708f7abb62d38dbb65b3178d3aab" title="Protocolo de la URL.">protocol</a> = val;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#ad261d4392a856bda47ab6f62f46876c4">  130</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSWSE_1_1URL.html#ad261d4392a856bda47ab6f62f46876c4" title="Cambia el host de la url.">setHost</a>(std::string val)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="classSWSE_1_1URL.html#ad7f9da3908b5e13fe245c4e8308e6800" title="Servidor o dominio.">host</a> = val;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="code" href="classSWSE_1_1URL.html#a20b52ac4dd69ddc11cc2980250c757f5">  138</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSWSE_1_1URL.html#a20b52ac4dd69ddc11cc2980250c757f5" title="Cambia el path de la url.">setFile</a>(std::string val)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <a class="code" href="classSWSE_1_1URL.html#aa48da00b17b98fc294a859b6492f1867" title="Archivo alojado en el host.">path</a> = val;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f" title="Tipo de dato para el string de una URL.">URLstr_t</a> <a class="code" href="classSWSE_1_1URL.html#adeaa57ab089219dc863b82c795f23e38">Rel2AbsPath</a>(<a class="code" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f" title="Tipo de dato para el string de una URL.">URLstr_t</a> rel);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">friend</span> std::ostream &amp; <a class="code" href="classSWSE_1_1URL.html#a220aec4c0b3b5cd0d30e93dfdfadeef7">operator&lt;&lt;</a>(std::ostream &amp; os,<a class="code" href="classSWSE_1_1URL.html" title="Clase URL.">URL</a> a);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">//void operator = (URL a){std::cout&lt;&lt;&quot;igual!!!&quot;&lt;&lt;std::endl;}</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f" title="Tipo de dato para el string de una URL.">URLstr_t</a> <a class="code" href="classSWSE_1_1URL.html#a2053df422e69981b91475e7df04a7b6a">urlencode</a>(<span class="keyword">const</span> <a class="code" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f" title="Tipo de dato para el string de una URL.">URLstr_t</a>&amp; url);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classSWSE_1_1URL.html#a823d9889f889c65ee04dfc737a175dbd">~URL</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;};</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}<span class="comment">//namespace SWSE</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#endif // URL_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 17 de Diciembre de 2012 13:37:43 para Crawler - Similarity Web Search Engine por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

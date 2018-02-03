@@ -1,0 +1,4 @@
+http://www.lab.dit.upm.es/~arqo/p/procesos/procesos.html
+http://www.chuidiang.com/clinux/procesos/procesoshilos.php
+http://www.elotrolado.net/hilo_trabajo-de-hilos-hebras-en-c-ayuda_1131627
+hebras c

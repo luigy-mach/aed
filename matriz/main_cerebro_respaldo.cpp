@@ -1,0 +1,164 @@
+#include <fstream>
+#include "CImg.h"
+#include <map>
+#include <string>
+#include <cstring>
+using namespace cimg_library;
+using namespace std;
+
+//**********************************************************
+//**********************************************************
+
+bool tof(double a){
+	return a<127?0:1;
+}
+
+CImg<bool> Bi(CImg<double>& M){
+	CImg<bool> bina(M);
+	for(int i=0;i<M.width();i++)
+           for(int j=0;j<M.height();j++)
+		bina(i,j)=tof(M(i,j));
+	return bina;
+}
+	
+
+
+CImg<double> Dx(CImg<double> & M)
+{
+	CImg<double> ddx(M);  
+	for(int i=0;i<M.width();i++)
+           for(int j=0;j<M.height()-1;j++)
+		if((M(i+1,j)-M(i,j))>10.0)
+	             ddx(i,j)=M(i+1,j) - M(i,j);
+		else
+		     ddx(i,j)=255;
+
+	return ddx;
+}
+
+
+CImg<double> Dy(CImg<double> & M)
+{
+	CImg<double> ddy(M);  
+	for(int i=0;i<M.width();i++)
+		for(int j=0;j<M.height()-1;j++)
+			if((M(i,j+1)-M(i,j))>10.0)
+		             ddy(i,j)=M(i,j+1) - M(i,j);
+			else
+			     ddy(i,j)=255;
+	return ddy;
+}
+
+
+CImg<double> Gr(CImg<double>& M){
+	CImg<double> grad(M);
+	CImg<double> ddx = Dx(M);
+	CImg<double> ddy = Dy(M);
+	for(int i=0;i<M.width()-1;i++)
+		for(int j=0;j<M.height()-1;j++)
+			grad(i,j)=sqrt(pow(ddx(i,j),2)+(ddy(i,j),2));
+	
+	return grad;
+}
+
+//**********************************************************
+//**********************************************************
+#include <sstream>
+
+typedef map< double, double > COLUMNA;
+typedef map< double, COLUMNA > MATRIZ;
+typedef map< int, MATRIZ > CEREBRO;
+
+typedef map< double,double >::iterator IT_COL;
+typedef map< double,COLUMNA >::iterator IT_MA;
+typedef map< int,MATRIZ >::iterator IT_CERE;
+
+
+template <class T>
+inline std::string to_string (const T& t)
+{
+   std::stringstream ss;
+   ss << t;
+   return ss.str();
+}
+
+COLUMNA copiar_columna(CImg<double>& a, int fila){
+	COLUMNA co;
+	for(int i=0;i<a.width();i++){
+		co[i]=a(fila,i);
+	}
+	return co;
+}
+
+MATRIZ copiar(CImg<double>& a){
+	MATRIZ ma;		
+	for(int i=0;i<a.height();i++){
+		ma[i]=copiar_columna(a,i);
+	}
+	return ma;	
+}
+
+
+void imprimir(CEREBRO& ce){
+	fstream file("cerebro.vti");
+
+/*	IT_CE it_ce;
+	IT_MA it_ma;
+	IT_COL it_col
+*/
+
+	file<<"# vtk dataFile Version 1.0"<<endl;
+	file<<"ASCII"<<endl;
+	file<<"DATASET POLYDATA"<<endl;
+	int contador=0;
+for(int k=0;k<ce.size(); k++){
+		for(int i=0;i<ce[k].size();i++){
+			for(int j=0;j<ce[k][i].size();j++){
+				if(ce[k][i][j]==0.0)
+					contador++
+
+	file<<"POINTS "<<contador<<" double"<<endl;
+
+	for(int k=0;k<ce.size(); k++){
+		for(int i=0;i<ce[k].size();i++){
+			for(int j=0;j<ce[k][i].size();j++){
+				if(ce[k][i][j]==0.0)
+					file<<i<<" "<<j<<" "<<k*10<<endl;
+			}
+		}
+	}
+	
+/*	for(int k=0,it_ce=ce.begin();it_ce!=ce.end(); k+=10,it_ce++){
+		for(int i=0, it_ma=it_ce->second->begin();it_ma!=it_ce->second->end();i++,it_ma++){
+			for(int j=0,it_col=it_ma->second->begin();it_col!=it_ma->second->end();j++,it_col++){
+				if(it_col->second==255.0)
+					file<<i<<" "<<j<<" "<<k<<endl;
+			}
+		}
+	}*/
+	
+
+	
+	file.close (); 
+}
+
+
+int main()
+{
+	CEREBRO ce;
+
+	for(int i=0;i<39;i++){
+		string a="img_brain/"+to_string(i+1)+".BMP";
+		CImg<double> M(a.c_str());
+		CImg<double>  ddx = Dx(M);
+	   	CImg<double>  ddy = Dy(M);
+		CImg<double>  grad= Gr(M);
+		ce[i]=copiar(grad);
+	}
+
+	imprimir(ce);
+	
+
+
+   return 1;
+}

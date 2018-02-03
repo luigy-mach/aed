@@ -1,0 +1,57 @@
+#ifndef FILE_LIST_INC
+#define FILE_LIST_INC
+TORCHDIR := $(shell cd /home/josemiki/Library/Torch3vision2.1/; pwd)
+OS := $(shell uname -s)
+include $(TORCHDIR)/Makefile_options_$(OS)
+CC_FILES := $(shell ls *.cc)
+C_FILES := $(foreach f,$(CC_FILES),$(patsubst %,%,$(f)))
+BINARIES := $(foreach g,$(C_FILES),$(patsubst %.cc,%,$(g)))
+#include "Object.h"
+
+#include <unistd.h>
+#include <dirent.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+
+namespace Torch {
+
+#define FILE_LIST_PATH_MAX 500 
+
+/** This class is designed to list files of a directory.
+
+    This class should be derived to loop on the files of the directory.
+
+    @author Sebastien Marcel (marcel@idiap.ch)
+    @version 2.0
+    \Date
+    @since 2.0
+*/
+class FileList : public Object
+{
+public:
+	char *path;
+	char pwdStart[FILE_LIST_PATH_MAX];
+	
+	char **filelist;
+	int NbFiles;
+	bool bOneFile;
+	struct stat st;
+
+	//-----
+	
+	/// make the list of files in directory #path_# 
+	FileList(char *path_, int file_max = -1);
+	
+	///
+	~FileList();
+
+	/// loop on the files of the current directory
+	bool loop();
+
+	/// virtual function called by the loop function for each file
+	virtual bool kernel(char *filename) = 0;
+};
+
+}
+
+#endif

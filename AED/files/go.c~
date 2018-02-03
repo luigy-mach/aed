@@ -1,0 +1,26 @@
+#include "/usr/local/pgsql/include/server/postgres.h"
+#include "/usr/local/pgsql/include/server/fmgr.h" 
+
+//#include <string.h>
+//#include <stdio.h>
+//#include "utils/geo_decls.h"
+
+
+#ifdef PG_MODULE_MAGIC
+PG_MODULE_MAGIC;
+#endif
+
+PG_FUNCTION_INFO_V1(compara1);
+
+Datum
+compara1(PG_FUNCTION_ARGS)
+{
+	text *texto = PG_GETARG_TEXT_P(0);
+	text *palabra = PG_GETARG_TEXT_P(1);
+
+	if((*texto)==(*palabra))
+		PG_RETURN_BOOL(true);
+	else
+		PG_RETURN_BOOL(false);
+
+}

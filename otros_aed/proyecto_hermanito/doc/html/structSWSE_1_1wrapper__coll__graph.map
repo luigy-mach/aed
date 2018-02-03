@@ -1,0 +1,10 @@
+<map id="SWSE::wrapper" name="SWSE::wrapper">
+<area shape="rect" id="node2" href="$classSWSE_1_1URLDownloader.html" title="Clase URLDownloader, Ejecuta la descarga de la URL." alt="" coords="376,1139,541,1346"/>
+<area shape="rect" id="node4" href="$classSWSE_1_1Crawler.html" title="{SWSE::Crawler\n|+ conneciones\l&#45; urlQueue\l&#45; poolThread\l&#45; ON\l&#45; TamCola\l&#45; NumThreads\l|+ Crawler()\l+ queueURL()\l+ run()\l+ turnOff()\l+ PopURL()\l+ isON()\l+ saveQueue()\l+ loadQueue()\l+ getRegister()\l}" alt="" coords="440,349,555,659"/>
+<area shape="rect" id="node8" href="$classSWSE_1_1Parser.html" title="{SWSE::Parser\n|&#45; reg_word_tag\l&#45; reg_word_script\l&#45; reg_word_style\l&#45; reg_word\l|+ Parser()\l+ to_plain_text()\l+ get_links()\l+ setURLResolverClient()\l+ saveData()\l+ run()\l+ ~Parser()\l+ genFileName()\l}" alt="" coords="232,813,405,1072"/>
+<area shape="rect" id="node6" href="$classSWSE_1_1URLregister.html" title="{SWSE::URLregister\n|&#45; m_data\l|+ URLregister()\l+ insert()\l+ getURLpointTo()\l+ HashURL()\l+ saveData()\l+ loadData()\l+ ~URLregister()\l}" alt="" coords="428,5,567,195"/>
+<area shape="rect" id="node11" href="$classSWSE_1_1CrawledDataProcessor.html" title="Clase CrawledDataProcessor que procesa la data de la." alt="" coords="211,427,416,581"/>
+<area shape="rect" id="node13" href="$classSWSE_1_1URLResolverClient.html" title="{SWSE::URLResolverClient\n|&#45; socket_\l&#45; resolver_\l|+ URLResolverClient()\l+ connect()\l+ hash()\l+ hash()\l+ resolve()\l+ setDate()\l+ close()\l&#45; Request()\l}" alt="" coords="5,392,187,616"/>
+<area shape="rect" id="node15" href="$classSWSE_1_1URL.html" title="Clase URL." alt="" coords="621,262,776,746"/>
+<area shape="rect" id="node18" href="$classSWSE_1_1httpRequest.html" title="{SWSE::httpRequest\n|&#45; method\l&#45; attributes\l|+ httpRequest()\l+ httpRequest()\l+ setURL()\l+ WriteSocket()\l+ AddHeader()\l+ init()\l+ getURL()\l}" alt="" coords="552,839,693,1046"/>
+</map>

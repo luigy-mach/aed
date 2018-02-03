@@ -1,0 +1,8 @@
+0 si
+1 te 
+2 conosco 
+3 no 
+4 me 
+5 acuerdo 
+6 como 
+7 alegria

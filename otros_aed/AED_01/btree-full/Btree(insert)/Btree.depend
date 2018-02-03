@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1353283799 source:c:\users\jason\desktop\btree\btree\main.cpp
+	<iostream>
+	"BTREE.h"
+
+1353273353 source:c:\users\jason\desktop\btree\btree\btree.cpp
+
+1353325414 c:\users\jason\desktop\btree\btree\btree.h
+	<vector>
+	"KEYINFO.h"
+
+1353283897 c:\users\jason\desktop\btree\btree\keyinfo.h
+
+1354074762 source:c:\users\jason\desktop\pila\btree\btree\main.cpp
+	<iostream>
+	"BTREE.h"
+
+1354074716 c:\users\jason\desktop\pila\btree\btree\btree.h
+	<vector>
+	<algorithm>
+	"KEYINFO.h"
+
+1354029688 c:\users\jason\desktop\pila\btree\btree\keyinfo.h
+
+1354075395 source:c:\users\jason\desktop\pila\btree\btree2\main.cpp
+	<iostream>
+	"BTREE.h"
+
+1354076893 c:\users\jason\desktop\pila\btree\btree2\btree.h
+	<vector>
+	<algorithm>
+	"KEYINFO.h"
+
+1354029688 c:\users\jason\desktop\pila\btree\btree2\keyinfo.h
+
+1354107000 source:c:\users\main\desktop\btree2\main.cpp
+	<iostream>
+	<ctime>
+	<stdlib.h>
+	<cstdio>
+	"BTREE.h"
+
+1354107195 c:\users\main\desktop\btree2\btree.h
+	<vector>
+	<algorithm>
+	"KEYINFO.h"
+
+1354029690 c:\users\main\desktop\btree2\keyinfo.h
+
+1354299936 source:c:\users\jason\desktop\btree(insert)\main.cpp
+	<iostream>
+	<ctime>
+	<stdlib.h>
+	<cstdio>
+	"BTREE.h"
+
+1354242923 c:\users\jason\desktop\btree(insert)\btree.h
+	<vector>
+	<algorithm>
+	"KEYINFO.h"
+
+1354029690 c:\users\jason\desktop\btree(insert)\keyinfo.h
+
+1355056788 source:c:\users\main\desktop\btree(insert)\main.cpp
+	<iostream>
+	<ctime>
+	<stdlib.h>
+	<cstdio>
+	"BTREE.h"
+
+1354385553 c:\users\main\desktop\btree(insert)\btree.h
+	<vector>
+	<algorithm>
+	"KEYINFO.h"
+
+1355056751 c:\users\main\desktop\btree(insert)\keyinfo.h
+

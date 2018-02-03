@@ -1,0 +1,36 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[activeacute,spanish]{babel} %Para el idioma español
+\usepackage[latin1]{inputenc} %para incluir eñe, puntuación
+\usepackage{anysize} %margenes
+\usepackage{listings} %para incluir archivos c++ y otros
+\usepackage{color} %para incluir colores
+
+\marginsize{3.5cm}{2.5cm}{2cm}{2cm}
+%margenes izquierda, derecha, superior, inferior respectivamente
+
+\begin{document}
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40} %definiendo un nuevo color
+
+\begin{center}
+\textbf{Comentando Lista Template\\Jos\'e Miguel Huam\'an Cruz, C.U.I.:20103389
+, josemiki24@gmail.com\\Profesor: Cristian Lopes del Alamo\\
+Escuela Profesional de Ciencia de la Computación\\
+Facultad de Producción y Servicios\\
+Universidad Nacional de San Agust\ 'in}
+\end{center}
+
+\lstset{numbers=left, numberstyle=\tiny} %enumerado del código en la parte izquierda
+
+%\lstset{backgroundcolor=\color{yellow}} %color de fondo
+
+\lstset{frameround=tttt}
+%esquina ovaladas derecha superior, derecha inferior, izquierda inferior, izquierda superior, respectivamente
+
+\lstset{keywordstyle=\color{blue},commentstyle=\color{OliveGreen}}
+%color de las palabras clave y delos comentarios
+
+\lstset{showstringspaces=false} %para no mostrar la separación de cadena
+
+\section{Lista Simplemente Enlazada Template}
+\lstinputlisting[language=C++,frame={btrl}]{ListaT.cpp}
+\end{document}

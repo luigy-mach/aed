@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Gabor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Gabor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Gabor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lgraph-lgvc" />
+					<Add option="-L/home/josemiki/Library/Torch3vision2.1/lib/Linux_DGB_FLOAT/-ltorch" />
+					<Add option="-lpthread" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="/home/josemiki/Library/Torch3vision2.1/core" />
+			<Add directory="/home/josemiki/Library/Torch3vision2.1/vision2.1/core" />
+		</Compiler>
+		<Linker>
+			<Add option="-L/home/josemiki/Library/Torch3vision2.1/lib/Linux_DGB_FLOAT/-ltorch" />
+			<Add option="-lpthread" />
+		</Linker>
+		<Unit filename="gradicador.cpp" />
+		<Unit filename="gradicador.h" />
+		<Unit filename="grafo.cpp" />
+		<Unit filename="grafo.h" />
+		<Unit filename="image.cpp" />
+		<Unit filename="image.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="mainqt.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

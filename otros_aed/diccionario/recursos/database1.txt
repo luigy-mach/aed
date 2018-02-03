@@ -1,0 +1,26 @@
+a#un, uno, una[Article]
+aardvark1#cerdo hormiguero
+aardvark2#oso hormiguero[Noun]
+aardvarks3#cerdos hormigueros
+aardvarks4#osos hormigueros 
+ab#prefijo que indica separacio/n
+aback1#hacia atras
+aback2#hacia atrás,take aback, desconcertar. En facha.
+aback3#por sopresa, desprevenidamente, de improviso
+aback4#atra/s[Adverb]
+abacterial#abacteriano, sin bacterias
+abacus#a/baco
+abacuses#a/bacos
+abaft1#A popa (towards stern)/En popa (in stern)
+abaft2#detra/s de[Adverb]
+abalone1#abulo/n
+abalone2#oreja de mar (molusco)[Noun]
+abalone3#oreja de mar[Noun]
+abalones4#abulones
+abalones1#orejas de mar (moluscos)[Noun]
+abalones2#orejas de mar[Noun]
+abandon1#abandonar
+abandon2#darse por vencido[Verb]
+abandon3#dejar
+abandon4#desamparar, desertar, renunciar, evacuar, repudiar
+abandon5#renunciar a[Verb]

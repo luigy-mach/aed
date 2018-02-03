@@ -1,0 +1,11 @@
+<map id="urldownloader.h" name="urldownloader.h">
+<area shape="rect" id="node3" href="$httpheader_8h.html" title="httpheader.h" alt="" coords="275,83,368,112"/>
+<area shape="rect" id="node5" href="$types_8h.html" title="Contiene las definiciones de los tipos que usados." alt="" coords="541,237,605,267"/>
+<area shape="rect" id="node31" href="$crawler_8h.html" title="Contiene la definición de la clase Crawler." alt="" coords="404,83,479,112"/>
+<area shape="rect" id="node37" href="$parser_8h.html" title="parser.h" alt="" coords="668,83,737,112"/>
+<area shape="rect" id="node45" href="$urlresolverclient_8h.html" title="urlresolverclient.h" alt="" coords="561,160,684,189"/>
+<area shape="rect" id="node48" href="$httprequest_8h.html" title="httprequest.h" alt="" coords="869,83,968,112"/>
+<area shape="rect" id="node33" href="$urlregister_8h.html" title="urlregister.h" alt="" coords="396,160,487,189"/>
+<area shape="rect" id="node40" href="$crawleddataprocessor_8h.html" title="Contiene la definición la clase CrawledDataProcessor." alt="" coords="759,160,919,189"/>
+<area shape="rect" id="node50" href="$URL_8h.html" title="URL.h" alt="" coords="943,160,1001,189"/>
+</map>

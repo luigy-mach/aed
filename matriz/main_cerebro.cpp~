@@ -1,0 +1,42 @@
+#include "matriz.h"
+#include <fstream>
+#include "CImg.h"
+#include <map>
+#include <string>
+#include <cstring>
+using namespace cimg_library;
+using namespace std;
+
+
+#include <sstream>
+
+template <class T>
+inline std::string to_string (const T& t)
+{
+   std::stringstream ss;
+   ss << t;
+   return ss.str();
+}
+
+
+int main()
+{
+	CImg<double>  A("img_brain/1.BMP");
+	map< int,map< double,map< double,double > > >  cerebro;
+
+	for(int i=1;i<40;i++){
+		string a="img_brain/"+to_string(i+1)+".BMP";
+		for(int j=0;j<40;j++){
+			for(int k=0;k<40;k++){
+				break;
+			}
+				
+		}
+	}
+	
+	
+
+	(A).display();
+
+   return 1;
+}

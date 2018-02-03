@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Crawler - Similarity Web Search Engine: Referencia de la Clase SWSE::Parser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Crawler - Similarity Web Search Engine
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Buscadorwebporsimilaridaddetextosentrepáginas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;datos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceSWSE.html">SWSE</a></li><li class="navelem"><a class="el" href="classSWSE_1_1Parser.html">Parser</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-attribs">Campos de datos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase SWSE::Parser</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="parser_8h_source.html">parser.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboración para SWSE::Parser:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1Parser__coll__graph.png" border="0" usemap="#SWSE_1_1Parser_coll__map" alt="Collaboration graph"/></div>
+<map name="SWSE_1_1Parser_coll__map" id="SWSE_1_1Parser_coll__map">
+<area shape="rect" id="node2" href="classSWSE_1_1Crawler.html" title="{SWSE::Crawler\n|+ conneciones\l&#45; urlQueue\l&#45; poolThread\l&#45; ON\l&#45; TamCola\l&#45; NumThreads\l|+ Crawler()\l+ queueURL()\l+ run()\l+ turnOff()\l+ PopURL()\l+ isON()\l+ saveQueue()\l+ loadQueue()\l+ getRegister()\l}" alt="" coords="17,262,132,573"/><area shape="rect" id="node4" href="classSWSE_1_1URLregister.html" title="{SWSE::URLregister\n|&#45; m_data\l|+ URLregister()\l+ insert()\l+ getURLpointTo()\l+ HashURL()\l+ saveData()\l+ loadData()\l+ ~URLregister()\l}" alt="" coords="5,5,144,195"/><area shape="rect" id="node6" href="classSWSE_1_1CrawledDataProcessor.html" title="Clase CrawledDataProcessor que procesa la data de la." alt="" coords="156,340,361,495"/><area shape="rect" id="node8" href="classSWSE_1_1URLResolverClient.html" title="{SWSE::URLResolverClient\n|&#45; socket_\l&#45; resolver_\l|+ URLResolverClient()\l+ connect()\l+ hash()\l+ hash()\l+ resolve()\l+ setDate()\l+ close()\l&#45; Request()\l}" alt="" coords="385,305,567,529"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a09bfdcafea4b858318d5c05cbabc9259"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a09bfdcafea4b858318d5c05cbabc9259">Parser</a> (<a class="el" href="classSWSE_1_1Crawler.html">Crawler</a> *c=0, <a class="el" href="namespaceSWSE.html#a0075c5fb5a359bfccf6eb0c5c324d7bc">ID</a> id=0)</td></tr>
+<tr class="memdesc:a09bfdcafea4b858318d5c05cbabc9259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds Class <a class="el" href="classSWSE_1_1Parser.html">Parser</a> and assigns regex to data members.  <a href="#a09bfdcafea4b858318d5c05cbabc9259"></a><br/></td></tr>
+<tr class="memitem:a1fdeb8c8d9bc17abcf6a45b0b4e73800"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f">URLstr_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a1fdeb8c8d9bc17abcf6a45b0b4e73800">to_plain_text</a> (<a class="el" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f">URLstr_t</a> &amp;str)</td></tr>
+<tr class="memdesc:a1fdeb8c8d9bc17abcf6a45b0b4e73800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take string input and remove all tags html.  <a href="#a1fdeb8c8d9bc17abcf6a45b0b4e73800"></a><br/></td></tr>
+<tr class="memitem:a79741af0b8fb8e39d5e75bd72c3da29b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a79741af0b8fb8e39d5e75bd72c3da29b">get_links</a> (<a class="el" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a> &amp;str, <a class="el" href="classSWSE_1_1URL.html">URL</a> &amp;url)</td></tr>
+<tr class="memdesc:a79741af0b8fb8e39d5e75bd72c3da29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take string input and return link list.  <a href="#a79741af0b8fb8e39d5e75bd72c3da29b"></a><br/></td></tr>
+<tr class="memitem:a6f0fe17349cb6affdff2b7c69f9cad6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a6f0fe17349cb6affdff2b7c69f9cad6f">setURLResolverClient</a> (<a class="el" href="classSWSE_1_1URLResolverClient.html">URLResolverClient</a> *rc)</td></tr>
+<tr class="memitem:a3d1bf01ea4965938d68db4c555bf304a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a3d1bf01ea4965938d68db4c555bf304a">saveData</a> (<a class="el" href="namespaceSWSE.html#a1144405c4e980f124708daeac58972c4">URLhash_t</a> &amp;h, <a class="el" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a> &amp;d)</td></tr>
+<tr class="memitem:af4fd4f86f306ffb7f9bf3c3719d1dae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#af4fd4f86f306ffb7f9bf3c3719d1dae9">run</a> (<a class="el" href="classSWSE_1_1httpResponse.html">httpResponse</a> *resp, <a class="el" href="classSWSE_1_1URL.html">URL</a> &amp;url, <a class="el" href="namespaceSWSE.html#a1144405c4e980f124708daeac58972c4">URLhash_t</a> &amp;hash)</td></tr>
+<tr class="memitem:a3e658b5917a93a3ef648050d060e3a93"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a3e658b5917a93a3ef648050d060e3a93">~Parser</a> ()</td></tr>
+<tr class="memitem:a4556ec87325e1476ff53cac17d2e564e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a4556ec87325e1476ff53cac17d2e564e">genFileName</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
+Campos de datos</h2></td></tr>
+<tr class="memitem:a5240d85ac15f786194e2b6afa2b54890"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1CrawledDataProcessor.html">CrawledDataProcessor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a5240d85ac15f786194e2b6afa2b54890">cdp</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a5c3547c863e0c556752912f2f73a7a17"><td class="memItemLeft" align="right" valign="top">boost::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a5c3547c863e0c556752912f2f73a7a17">reg_word_tag</a></td></tr>
+<tr class="memdesc:a5c3547c863e0c556752912f2f73a7a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena la expresion regular que remueve los tags html &lt;...&gt;&lt;/...&gt;  <a href="#a5c3547c863e0c556752912f2f73a7a17"></a><br/></td></tr>
+<tr class="memitem:a761fce3dbfae8c5d9f36251114892a6e"><td class="memItemLeft" align="right" valign="top">boost::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a761fce3dbfae8c5d9f36251114892a6e">reg_word_script</a></td></tr>
+<tr class="memdesc:a761fce3dbfae8c5d9f36251114892a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena la expresion regular que remueve &lt;script&gt;...&lt;/script&gt;  <a href="#a761fce3dbfae8c5d9f36251114892a6e"></a><br/></td></tr>
+<tr class="memitem:aa878c3e12781870d3ef9b7c6f778673f"><td class="memItemLeft" align="right" valign="top">boost::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#aa878c3e12781870d3ef9b7c6f778673f">reg_word_style</a></td></tr>
+<tr class="memdesc:aa878c3e12781870d3ef9b7c6f778673f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena la expresion regular que remueve &lt;style&gt;...&lt;/style&gt;  <a href="#aa878c3e12781870d3ef9b7c6f778673f"></a><br/></td></tr>
+<tr class="memitem:aa013beb017757bdda49c447fef763061"><td class="memItemLeft" align="right" valign="top">boost::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#aa013beb017757bdda49c447fef763061">reg_word</a></td></tr>
+<tr class="memdesc:aa013beb017757bdda49c447fef763061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena la expresion regular que remueve cualquier caracter diferente a [a-zA-Z0-9_].  <a href="#aa013beb017757bdda49c447fef763061"></a><br/></td></tr>
+<tr class="memitem:ab6a08fcc26f4e5e4cb4e2547ecea8230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1Crawler.html">Crawler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#ab6a08fcc26f4e5e4cb4e2547ecea8230">ptr_crawler</a></td></tr>
+<tr class="memitem:a12558445129dbb2dc7d2a8ac1500380b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSWSE_1_1URLResolverClient.html">URLResolverClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSWSE_1_1Parser.html#a12558445129dbb2dc7d2a8ac1500380b">urlResolver</a></td></tr>
+</table>
+<h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a09bfdcafea4b858318d5c05cbabc9259"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Parser::Parser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1Crawler.html">Crawler</a> *&#160;</td>
+          <td class="paramname"><em>c</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceSWSE.html#a0075c5fb5a359bfccf6eb0c5c324d7bc">ID</a>&#160;</td>
+          <td class="paramname"><em>id</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Builds Class <a class="el" href="classSWSE_1_1Parser.html">Parser</a> and assigns regex to data members. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e658b5917a93a3ef648050d060e3a93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Parser::~Parser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a4556ec87325e1476ff53cac17d2e564e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Parser::genFileName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a79741af0b8fb8e39d5e75bd72c3da29b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Parser::get_links </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1URL.html">URL</a> &amp;&#160;</td>
+          <td class="paramname"><em>url</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Take string input and return link list. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URL_str</td><td>String containing an html page </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1Parser_a79741af0b8fb8e39d5e75bd72c3da29b_icgraph.png" border="0" usemap="#classSWSE_1_1Parser_a79741af0b8fb8e39d5e75bd72c3da29b_icgraph" alt=""/></div>
+<map name="classSWSE_1_1Parser_a79741af0b8fb8e39d5e75bd72c3da29b_icgraph" id="classSWSE_1_1Parser_a79741af0b8fb8e39d5e75bd72c3da29b_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1Parser.html#af4fd4f86f306ffb7f9bf3c3719d1dae9" title="SWSE::Parser::run" alt="" coords="223,13,356,43"/><area shape="rect" id="node5" href="classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390" title="Inicia la ejcución de las descargas." alt="" coords="407,5,572,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af4fd4f86f306ffb7f9bf3c3719d1dae9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Parser::run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1httpResponse.html">httpResponse</a> *&#160;</td>
+          <td class="paramname"><em>resp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1URL.html">URL</a> &amp;&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceSWSE.html#a1144405c4e980f124708daeac58972c4">URLhash_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1Parser_af4fd4f86f306ffb7f9bf3c3719d1dae9_icgraph.png" border="0" usemap="#classSWSE_1_1Parser_af4fd4f86f306ffb7f9bf3c3719d1dae9_icgraph" alt=""/></div>
+<map name="classSWSE_1_1Parser_af4fd4f86f306ffb7f9bf3c3719d1dae9_icgraph" id="classSWSE_1_1Parser_af4fd4f86f306ffb7f9bf3c3719d1dae9_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390" title="Inicia la ejcución de las descargas." alt="" coords="191,5,356,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d1bf01ea4965938d68db4c555bf304a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Parser::saveData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceSWSE.html#a1144405c4e980f124708daeac58972c4">URLhash_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceSWSE.html#ad43695d0ddd8e9c880c1cfe3d4270cb6">Data_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1Parser_a3d1bf01ea4965938d68db4c555bf304a_icgraph.png" border="0" usemap="#classSWSE_1_1Parser_a3d1bf01ea4965938d68db4c555bf304a_icgraph" alt=""/></div>
+<map name="classSWSE_1_1Parser_a3d1bf01ea4965938d68db4c555bf304a_icgraph" id="classSWSE_1_1Parser_a3d1bf01ea4965938d68db4c555bf304a_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1Parser.html#af4fd4f86f306ffb7f9bf3c3719d1dae9" title="SWSE::Parser::run" alt="" coords="228,13,361,43"/><area shape="rect" id="node5" href="classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390" title="Inicia la ejcución de las descargas." alt="" coords="412,5,577,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f0fe17349cb6affdff2b7c69f9cad6f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SWSE::Parser::setURLResolverClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSWSE_1_1URLResolverClient.html">URLResolverClient</a> *&#160;</td>
+          <td class="paramname"><em>rc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1Parser_a6f0fe17349cb6affdff2b7c69f9cad6f_icgraph.png" border="0" usemap="#classSWSE_1_1Parser_a6f0fe17349cb6affdff2b7c69f9cad6f_icgraph" alt=""/></div>
+<map name="classSWSE_1_1Parser_a6f0fe17349cb6affdff2b7c69f9cad6f_icgraph" id="classSWSE_1_1Parser_a6f0fe17349cb6affdff2b7c69f9cad6f_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1URLDownloader.html#a22b72a75b813c093e681a67d8716ef49" title="Constructor a partir de un obejo URL." alt="" coords="268,5,433,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1fdeb8c8d9bc17abcf6a45b0b4e73800"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f">URLstr_t</a> &amp; Parser::to_plain_text </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceSWSE.html#a1b9d8fd936b0fd071adf32aba3a98c3f">URLstr_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Take string input and remove all tags html. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">URL_str</td><td>String containing an html page </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Plain text </dd></dl>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSWSE_1_1Parser_a1fdeb8c8d9bc17abcf6a45b0b4e73800_icgraph.png" border="0" usemap="#classSWSE_1_1Parser_a1fdeb8c8d9bc17abcf6a45b0b4e73800_icgraph" alt=""/></div>
+<map name="classSWSE_1_1Parser_a1fdeb8c8d9bc17abcf6a45b0b4e73800_icgraph" id="classSWSE_1_1Parser_a1fdeb8c8d9bc17abcf6a45b0b4e73800_icgraph">
+<area shape="rect" id="node3" href="classSWSE_1_1Parser.html#af4fd4f86f306ffb7f9bf3c3719d1dae9" title="SWSE::Parser::run" alt="" coords="247,13,380,43"/><area shape="rect" id="node5" href="classSWSE_1_1URLDownloader.html#a993f4f44df994603ad9921e74c8d9390" title="Inicia la ejcución de las descargas." alt="" coords="431,5,596,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2>Documentación de los campos</h2>
+<a class="anchor" id="a5240d85ac15f786194e2b6afa2b54890"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1CrawledDataProcessor.html">CrawledDataProcessor</a>* SWSE::Parser::cdp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6a08fcc26f4e5e4cb4e2547ecea8230"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1Crawler.html">Crawler</a>* SWSE::Parser::ptr_crawler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa013beb017757bdda49c447fef763061"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::regex SWSE::Parser::reg_word</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena la expresion regular que remueve cualquier caracter diferente a [a-zA-Z0-9_]. </p>
+
+</div>
+</div>
+<a class="anchor" id="a761fce3dbfae8c5d9f36251114892a6e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::regex SWSE::Parser::reg_word_script</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena la expresion regular que remueve &lt;script&gt;...&lt;/script&gt; </p>
+
+</div>
+</div>
+<a class="anchor" id="aa878c3e12781870d3ef9b7c6f778673f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::regex SWSE::Parser::reg_word_style</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena la expresion regular que remueve &lt;style&gt;...&lt;/style&gt; </p>
+
+</div>
+</div>
+<a class="anchor" id="a5c3547c863e0c556752912f2f73a7a17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::regex SWSE::Parser::reg_word_tag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena la expresion regular que remueve los tags html &lt;...&gt;&lt;/...&gt; </p>
+
+</div>
+</div>
+<a class="anchor" id="a12558445129dbb2dc7d2a8ac1500380b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSWSE_1_1URLResolverClient.html">URLResolverClient</a>* SWSE::Parser::urlResolver</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li><a class="el" href="parser_8h_source.html">parser.h</a></li>
+<li><a class="el" href="parser_8cpp.html">parser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 17 de Diciembre de 2012 13:37:43 para Crawler - Similarity Web Search Engine por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

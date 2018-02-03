@@ -1,0 +1,7 @@
+digraph G{
+rankdir=LR
+edge [dir="both"]
+ hola1 -> hola2;
+ hola2 -> hola3;
+ hola3 -> hola4;
+}

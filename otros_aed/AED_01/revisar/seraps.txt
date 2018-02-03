@@ -1,0 +1,388 @@
+#ifndef BTREE_H
+#define BTREE_H
+
+#include <vector>
+#include <algorithm>
+#include "keyinfo.h"
+#include <iostream>
+
+using namespace std;
+
+enum error_code{ok=1,overflow_error,underflow_error,duplicated_error,not_found_error};
+typedef size_t ST;
+typedef int I;
+const ST orden_default=100;
+//T =void*,esta en el keyinfo
+
+/********************************BTREEPAGE************************************/
+class BtreePage
+{
+  private:
+    typedef KeyInfo Key;
+    typedef BtreePage Page;
+    vector< Key > m_keys;
+    vector<Page*> m_pChildren;
+    ST m_orden,m_nkeys;
+
+  public:
+     BtreePage(ST _orden):m_orden(_orden),m_nkeys(0)
+     {
+        m_keys.resize(_orden+1);
+        m_pChildren.resize(_orden+2);
+        for(register ST i=0;i<_orden+2;++i)
+            m_pChildren[i]=0;
+     }
+     error_code insert(const Key &ki,I (*func)(T,T));
+     void clean();
+     void insert_at(Page *p1,Key &ki,Page *p2,I pos);
+     I binary(vector< Key > &v,I inf,I sup,const Key &ki,I (*func)(T,T));
+     void cargar_igual(Key &ki,vector<long> &v,I (*func)(void *,void *));
+     void cargar_menor(Key &ki,vector<long> &v,I (*func)(void *,void *));
+     void cargar_mayor(Key &ki,vector<long> &v,I (*func)(void *,void *));
+     void cargar_todo(vector<long> &v);
+     bool buscar(Key &ki,I (*func)(T,T));
+     pReg retorn_reg_page(Key &ki,I (*func)(T,T));
+     ST posicionpage(Key &ki,I (*func)(T,T));
+     friend class Btree;
+};
+
+
+/********************************BTREE************************************/
+class Btree
+{
+  private:
+    typedef KeyInfo Key;
+    typedef BtreePage Page;
+    Page *m_pRoot;
+    ST n;
+
+  public:
+    Btree(ST _orden=orden_default):n(0)
+    {
+        m_pRoot=new Page(_orden);
+    }
+    void insert(T key,pReg reg,I (*func)(T,T));
+    void splitroot();
+    void splitpage(Page *&father,Page *&pPage1,Key &ki,Page *&pPage2);
+    void insert_at_ki(vector< Key > &v,ST pos,const Key &ki,ST n_max);
+    void insert_at_prev(vector< Page* > &v,ST pos,Page *child);
+    void insert_at_post(vector< Page* > &v,ST pos,Page *child,ST n_max);
+    bool buscar(T key,I (*func)(T,T));
+    pReg retornar_reg(T key,I (*func)(T,T));
+    ST posicion(T key,I (*func)(T,T));
+    void cargar_igual(void *key,vector<long> &v,I (*func)(void *,void *));
+    void cargar_menor(void *key,vector<long> &v,I (*func)(void *,void *));
+    void cargar_mayor(void *key,vector<long> &v,I (*func)(void *,void *));
+    ST size()
+    {
+        return n;
+    }
+};
+
+
+#endif // BTREE_H
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include "btree.h"
+
+
+/********************************Btree FUNCIONES************************************/
+void Btree::insert(T key,pReg reg,I (*func)(T,T))
+{
+    error_code e=m_pRoot->insert(KeyInfo(key,reg),func);
+    if(e==overflow_error)
+        splitroot();
+    if(e!=duplicated_error)
+        ++n;
+}
+
+/**divide la raiz en dos paginas**/
+void Btree::splitroot()
+{
+    BtreePage *pPage1,*pPage2;
+    KeyInfo ki;
+    splitpage(m_pRoot,pPage1,ki,pPage2);
+    m_pRoot->clean();
+    m_pRoot->insert_at(pPage1,ki,pPage2,0);
+}
+
+/**p1,p2,ki entran vacios y se llenaran en esta funcion
+la funcion divide el r_parent en dos paginas con un ki central**/
+void Btree::splitpage(BtreePage *&father,BtreePage *&pPage1,KeyInfo &ki,BtreePage *&pPage2)
+{
+    pPage1=new BtreePage(father->m_orden);
+    pPage2=new BtreePage(father->m_orden);
+    ST medio=father->m_orden/2;
+    copy(father->m_keys.begin(),father->m_keys.begin()+medio,pPage1->m_keys.begin());pPage1->m_nkeys=medio;
+    copy(father->m_pChildren.begin(),father->m_pChildren.begin()+medio+1,pPage1->m_pChildren.begin());
+    ki=father->m_keys[medio];
+    copy(father->m_keys.begin()+medio+1,father->m_keys.end(),pPage2->m_keys.begin());pPage2->m_nkeys=father->m_orden-medio;
+    copy(father->m_pChildren.begin()+medio+1,father->m_pChildren.end(),pPage2->m_pChildren.begin());
+}
+
+//inserta el kyinfo en nuestro vector
+void Btree::insert_at_ki(vector< KeyInfo > &v,ST pos,const KeyInfo &ki,ST n_max)
+{
+    for(register ST i=n_max;i>pos;--i) v[i]=v[i-1];
+    v[pos]=ki;
+}
+//inserta un page antes de un elemento de la posicion
+void Btree::insert_at_prev(vector< BtreePage* > &v,ST pos,BtreePage *child)
+{
+    delete  v[pos];
+    v[pos]=child;
+}
+//inserta un page despues de un elemento de la posicion
+void Btree::insert_at_post(vector< BtreePage* > &v,ST pos,BtreePage *child,ST n_max)
+{
+    for(register ST i=n_max;i>pos;--i) v[i]=v[i-1];
+    v[pos]=child;
+}
+
+/**Verifica si el dato esta en el arbol,usa el buscar del BtrePage**/
+bool Btree::buscar(T key,I (*func)(T,T))
+{
+    KeyInfo ki(key,0);
+    return m_pRoot->buscar(ki,func);
+}
+
+void Btree::cargar_igual(void *key,vector<long> &v,I (*func)(void *,void *))
+{
+    Key ki(key,0);
+    m_pRoot->cargar_igual(ki,v,func);
+}
+
+void Btree::cargar_menor(void *key,vector<long> &v,I (*func)(void *,void *))
+{
+  Key ki(key,0);
+  m_pRoot->cargar_menor(ki,v,func);
+}
+
+void Btree::cargar_mayor(void *key,vector<long> &v,I (*func)(void *,void *))
+{
+  Key ki(key,0);
+  m_pRoot->cargar_mayor(ki,v,func);
+}
+
+pReg Btree::retornar_reg(T key,I (*func)(T,T))
+{
+    KeyInfo ki(key,0);
+    return m_pRoot->retorn_reg_page(ki,func);
+}
+
+ST Btree::posicion(T key,I (*func)(T,T))
+{
+    KeyInfo ki(key,0);
+    return m_pRoot->posicionpage(ki,func);
+}
+
+/********************************BtreePage FUNCIONES************************************/
+
+error_code BtreePage::insert(const KeyInfo &ki,I (*func)(T,T))
+{
+  Btree *pt=0;
+  I pos=binary(m_keys,0,m_nkeys,ki,func);
+  if(pos<m_nkeys)
+    if(func(m_keys[pos].key,ki.key)==0)
+       return duplicated_error;
+
+  if(m_pChildren[pos])
+  {
+    error_code e=m_pChildren[pos]->insert(ki,func);
+    if(e==duplicated_error || e==ok)
+      return e;
+    BtreePage *pPage1,*pPage2;
+    KeyInfo ki;
+    pt->splitpage(m_pChildren[pos],pPage1,ki,pPage2);
+    insert_at(pPage1,ki,pPage2,pos);
+  }
+  else {pt->insert_at_ki(m_keys,pos,ki,m_nkeys);++m_nkeys;}
+  if(m_nkeys>m_orden) return overflow_error;
+  return ok;
+}
+
+/**hece que el numero de key y los m_pchildren sea 0**/
+void BtreePage::clean()
+{
+  for(register ST i=0;i<=m_nkeys;++i) m_pChildren[i]=0;
+  m_nkeys=0;
+}
+
+/**copia los parametros de la funcion
+a los vectores de la clase**/
+void BtreePage::insert_at(BtreePage *p1,KeyInfo &ki,BtreePage *p2,I pos)
+{
+  Btree *pt=0;
+  pt->insert_at_ki(m_keys,pos,ki,m_nkeys);++m_nkeys;
+  pt->insert_at_prev(m_pChildren,pos,p1);
+  pt->insert_at_post(m_pChildren,pos+1,p2,m_nkeys);
+}
+
+/**devuelve la posicion del dato en la que se deberia de encontrar dentro de un vector**/
+I BtreePage::binary(vector< KeyInfo > &v,I inf,I sup,const KeyInfo &ki,I (*func)(T,T))
+{
+    I max=sup,medio;
+    --sup;
+    while(inf<=sup)
+    {
+        medio=(inf+sup)/2;
+        if(func(v[medio].key,ki.key)==0)
+            return medio;
+        if(func(ki.key,v[medio].key)<0)
+        {
+            sup=medio-1;
+            if(sup<0 || func(v[sup].key,ki.key)<0)
+                return medio;
+        }
+        else
+        {
+            inf=medio+1;
+            if(inf==max || func(v[inf].key,ki.key)>0)
+            return inf;
+        }
+    }
+    return 0;
+}
+
+/**Verifica si el dato esta en el arbol**/
+bool BtreePage::buscar(KeyInfo &ki,I (*func)(T,T))
+{
+    I pos=binary(m_keys,0,m_nkeys,ki,func);
+    if(func(m_keys[pos].key,ki.key)==0)
+        return true;
+    if(!m_pChildren[pos])
+        return false;
+    m_pChildren[pos]->buscar(ki,func);
+}
+
+void BtreePage::cargar_todo(vector<long> &v)
+{
+    for(ST i=0;i<m_nkeys;++i)
+       v.push_back(m_keys[i].reg);
+    if(!m_pChildren[0]) return;
+
+    for(ST i=0;i<=m_nkeys;++i)
+        m_pChildren[i]->cargar_todo(v);
+
+}
+
+void BtreePage::cargar_igual(Key &ki,vector<long> &v,int (*func)(void *,void *))
+{
+     int pos=binary(m_keys,0,m_nkeys,ki,func);
+     if(func(m_keys[pos].key,ki.key)==0) {v.push_back(m_keys[pos].reg);return;}
+     if(!m_pChildren[pos]) return;
+     m_pChildren[pos]->cargar_igual(ki,v,func);
+}
+
+void BtreePage::cargar_menor(Key &ki,vector<long> &v,int (*func)(void *,void *))
+{
+  int pos=binary(m_keys,0,m_nkeys,ki,func);
+
+  for(int i=0;i<pos;++i)
+    v.push_back(m_keys[i].reg);
+  if(!m_pChildren[pos]) return;
+
+  for(int i=0;i<pos;++i)
+     m_pChildren[i]->cargar_todo(v);
+
+   if(m_nkeys!=pos && func(m_keys[pos].key,ki.key)==0){
+       m_pChildren[pos]->cargar_todo(v);
+       return ;}
+   m_pChildren[pos]->cargar_menor(ki,v,func);
+}
+
+void BtreePage::cargar_mayor(Key &ki,vector<long> &v,int (*func)(void *,void *))
+{
+  int pos=binary(m_keys,0,m_nkeys,ki,func);
+
+  for(ST i=pos+1;i<m_nkeys;++i)
+    v.push_back(m_keys[i].reg);
+  if(!m_pChildren[pos]) return;
+
+  for(ST i=pos+1;i<=m_nkeys;++i)
+     m_pChildren[i]->cargar_todo(v);
+
+   if(m_nkeys!=pos && func(m_keys[pos].key,ki.key)==0) return ;
+
+   if(m_nkeys!=pos && func(m_keys[pos].key,ki.key)!=0) v.push_back(m_keys[pos].reg);
+
+   m_pChildren[pos]->cargar_mayor(ki,v,func);
+}
+
+pReg BtreePage::retorn_reg_page(Key &ki,I (*func)(T,T))
+{
+    I pos=binary(m_keys,0,m_nkeys,ki,func);
+    if(func(m_keys[pos].key,ki.key)==0)
+        return m_keys[pos].reg;
+    if(!m_pChildren[pos])
+        return 0;
+    m_pChildren[pos]->retorn_reg_page(ki,func);
+}
+
+ST BtreePage::posicionpage(KeyInfo &ki,I (*func)(T,T))
+{
+    ST contador=0;
+    cout<<"m_orden : "<<m_orden<<endl;
+    ST pos=binary(m_keys,0,m_nkeys,ki,func);
+    cout<<"pos : "<<pos<<endl;
+    if(func(m_keys[pos].key,ki.key)==0)
+        contador+=pos;
+    else
+    {
+        if(!m_pChildren[pos])
+            contador=0;
+        else
+        {
+            ST temp=m_pChildren[pos]->posicionpage(ki,func);
+            contador=m_orden+(m_orden*pos)+temp;
+        }
+
+    }
+    return contador;
+}

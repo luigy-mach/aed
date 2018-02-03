@@ -1,0 +1,7 @@
+<map id="SWSE::httpAsyncClient::handle_read_headers" name="SWSE::httpAsyncClient::handle_read_headers">
+<area shape="rect" id="node3" href="$classSWSE_1_1httpAsyncClient.html#a021cdea01aecd2f7fcae583bcfd8d003" title="Lee la cabezera http recibida de el servidor." alt="" coords="216,5,387,51"/>
+<area shape="rect" id="node5" href="$classSWSE_1_1httpAsyncClient.html#aeb071119814882af9b690c76751fb78a" title="Lee la linea de estado recibidos por el servidor." alt="" coords="435,5,597,51"/>
+<area shape="rect" id="node7" href="$classSWSE_1_1httpAsyncClient.html#a6365ca680a86e211dabad0a3779d7eea" title="Envía el request al servidor." alt="" coords="645,5,808,51"/>
+<area shape="rect" id="node9" href="$classSWSE_1_1httpAsyncClient.html#a6d826d788141ff5b5211d1c537cc884d" title="Realiza la conexión con el servidor." alt="" coords="856,5,1019,51"/>
+<area shape="rect" id="node11" href="$classSWSE_1_1httpAsyncClient.html#a967090b5de0438c4d1f348b2b5be4e64" title="Constructor." alt="" coords="1067,5,1229,51"/>
+</map>

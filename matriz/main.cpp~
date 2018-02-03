@@ -1,0 +1,16 @@
+#include "matriz.h"
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+   ofstream salida("sal.txt");
+   Matriz<int> A(10,10);
+   for(int i=0;i<10;i++)
+      A.Add(8,i,i);
+   A.print(salida);cout<<endl; 
+   A.print(cout);
+
+   return 1;
+}

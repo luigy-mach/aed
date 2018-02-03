@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include <cstdio>
+
+using namespace std;
+typedef size_t st;
+
+void eliminarblanco(string &palabra)
+{
+    string tmp;
+    st tam=palabra.size();
+    for(st i=0;i<tam;++i){
+        if(palabra[i]!=' '){
+            tmp.push_back(palabra[i]);}
+        if(palabra[i]!=' ' && palabra[i+1]==' '){
+            tmp.push_back(' ');}
+    }
+    tam=tmp.size();
+    palabra.resize(tam-1);
+    for(st i=0;i<tam-1;++i){
+        palabra[i]=tmp[i];
+    }
+}
+
+int main()
+{
+    string palabra="       hola    ff  sdd                   y   ";
+    eliminarblanco(palabra);
+    cout << "Hello world!" << endl;
+    return 0;
+}
